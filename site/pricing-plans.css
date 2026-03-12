@@ -1,0 +1,595 @@
+/* ============================================
+   Collage.inc Pricing Plans Page — Styles
+   Extends styles.css (loaded first)
+   ============================================ */
+
+/* --- Page background --- */
+.page-pricing-plans {
+  background: var(--color-white);
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.pp-hero {
+  padding: calc(var(--header-height) + 7rem) 0 var(--space-3xl);
+  text-align: center;
+  position: relative;
+  background: linear-gradient(180deg, var(--color-white) 50%, var(--color-bg) 100%);
+}
+
+.pp-hero .deco-shape { opacity: 0.18; }
+
+.pp-hero__content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pp-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--color-black);
+  margin-bottom: var(--space-md);
+}
+
+.pp-hero__subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-gray-600);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   PRICING CARDS
+   ============================================ */
+.pp-plans-section {
+  padding: var(--space-3xl) 0 var(--space-4xl);
+  background: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.pp-plans-section .deco-shape { opacity: 0.22; }
+
+.pp-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.pp-plan {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+}
+
+.pp-plan:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Featured plan highlight */
+.pp-plan--featured {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary), 0 4px 24px rgba(100, 115, 255, 0.1);
+  position: relative;
+}
+
+.pp-plan--featured:hover {
+  box-shadow: 0 0 0 1px var(--color-primary), 0 12px 32px rgba(100, 115, 255, 0.15);
+}
+
+.pp-plan__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-bottom: var(--space-md);
+  width: fit-content;
+}
+
+.pp-plan__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-xs);
+}
+
+.pp-plan__tagline {
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+  line-height: 1.5;
+  margin-bottom: var(--space-lg);
+}
+
+.pp-plan__price {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-black);
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-lg);
+}
+
+.pp-plan__price-suffix {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray-500);
+  letter-spacing: 0;
+}
+
+.pp-plan__price--custom {
+  font-size: 1.5rem;
+}
+
+.pp-plan__divider {
+  height: 1px;
+  background: var(--color-gray-200);
+  margin-bottom: var(--space-lg);
+}
+
+.pp-plan__highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+.pp-plan__highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--color-gray-700);
+  line-height: 1.5;
+}
+
+.pp-plan__highlights li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pp-plan__cta {
+  width: 100%;
+  text-align: center;
+}
+
+/* Dramatic hover for Basic/Custom secondary buttons */
+.pp-plan:not(.pp-plan--featured) .pp-plan__cta:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 16px rgba(100, 115, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Annual billing note */
+.pp-billing-note {
+  text-align: center;
+  margin-top: var(--space-xl);
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+}
+
+.pp-billing-note strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ============================================
+   FEATURE COMPARISON TABLE
+   ============================================ */
+.pp-compare-section {
+  padding: var(--space-4xl) 0;
+  background: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.pp-compare-section .deco-shape { opacity: 0.25; }
+
+.pp-compare__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.pp-compare__header h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--color-black);
+  margin-bottom: var(--space-sm);
+}
+
+.pp-compare__header p {
+  font-size: 1.0625rem;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+}
+
+.pp-table-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table.pp-compare {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Table header */
+.pp-compare thead th {
+  padding: var(--space-md) var(--space-lg);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-black);
+  background: var(--color-white);
+  border-bottom: 2px solid var(--color-gray-200);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.pp-compare thead th:first-child {
+  text-align: left;
+  width: 40%;
+}
+
+.pp-compare thead .pp-th-price {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-gray-500);
+  margin-top: 2px;
+}
+
+/* Category header rows */
+.pp-compare .pp-category td {
+  padding: var(--space-md) var(--space-lg);
+  font-size: 0.6875rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-500);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+/* Feature rows */
+.pp-compare tbody td {
+  padding: var(--space-md) var(--space-lg);
+  font-size: 0.9375rem;
+  color: var(--color-gray-700);
+  border-bottom: 1px solid var(--color-gray-100);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pp-compare tbody td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+/* Check and dash icons */
+.pp-check {
+  display: inline-flex;
+  color: var(--color-primary);
+}
+
+.pp-dash {
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background: var(--color-gray-300);
+  border-radius: 1px;
+  vertical-align: middle;
+}
+
+/* Value cells (numbers, text) */
+.pp-value {
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: 0.875rem;
+}
+
+/* ============================================
+   CONTACT FORM — Split layout
+   ============================================ */
+.pp-contact {
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.pp-contact .deco-shape { opacity: 0.3; }
+
+.pp-contact__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.pp-contact__copy h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--color-black);
+  margin-bottom: var(--space-lg);
+}
+
+.pp-contact__copy p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-gray-600);
+}
+
+.pp-contact__form-wrap {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* Form fields */
+.pp-form__field {
+  margin-bottom: var(--space-lg);
+}
+
+.pp-form__field label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-xs);
+}
+
+.pp-form__req {
+  color: var(--color-primary);
+}
+
+.pp-form__field input,
+.pp-form__field textarea {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: var(--color-black);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+}
+
+.pp-form__field input:focus,
+.pp-form__field textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.pp-form__field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.pp-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.pp-form__submit {
+  width: 100%;
+  margin-top: var(--space-sm);
+}
+
+.pp-form__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ct-form__status {
+  display: none;
+}
+
+.ct-form__status--success,
+.ct-form__status--error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  border-radius: var(--radius-lg);
+  animation: statusFadeIn 0.4s ease;
+}
+
+@keyframes statusFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ct-form__status--success {
+  background: var(--color-bg);
+}
+
+.ct-form__status--error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.ct-form__status-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+
+.ct-form__status-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.ct-form__status--success .ct-form__status-heading {
+  color: var(--color-black);
+}
+
+.ct-form__status--error .ct-form__status-heading {
+  color: #991b1b;
+}
+
+.ct-form__status-body {
+  font-size: 0.9375rem;
+  color: var(--color-gray-500);
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+.pp-faq {
+  padding: var(--space-4xl) 0;
+  background: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.pp-faq .deco-shape { opacity: 0.3; }
+
+.pp-faq__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.pp-faq__header h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--color-black);
+}
+
+.pp-faq__list {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.pp-faq__item {
+  border-bottom: 1px solid var(--color-gray-200);
+  padding: var(--space-lg) 0;
+}
+
+.pp-faq__item:first-child {
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.pp-faq__item summary {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  letter-spacing: -0.01em;
+}
+
+.pp-faq__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pp-faq__item summary::after {
+  content: '+';
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-gray-400);
+  transition: transform var(--duration) var(--ease);
+  flex-shrink: 0;
+}
+
+.pp-faq__item[open] summary::after {
+  content: '\2212';
+}
+
+.pp-faq__item p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-gray-600);
+  padding-top: var(--space-md);
+  max-width: 600px;
+}
+
+/* --- CTA override --- */
+.page-pricing-plans .bottom-cta {
+  border-radius: 0;
+  margin: 0;
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-lavender-pale) 30%, var(--color-lavender-light) 100%);
+}
+
+.page-pricing-plans .bottom-cta .deco-shape { opacity: 0.35; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .pp-hero {
+    padding: calc(var(--header-height) + 4rem) 0 var(--space-2xl);
+  }
+
+  .pp-plans {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .pp-contact__split {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .pp-form__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pp-hero {
+    padding: calc(var(--header-height) + 8rem) 0 var(--space-3xl);
+  }
+}

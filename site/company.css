@@ -1,0 +1,356 @@
+/* ============================================
+   Collage.inc Company Page — Styles
+   Extends styles.css (loaded first)
+   ============================================ */
+
+/* --- Page background --- */
+.page-company {
+  background: var(--color-white);
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.co-hero {
+  padding: calc(var(--header-height) + 7rem) 0 var(--space-4xl);
+  text-align: center;
+  position: relative;
+  background: linear-gradient(180deg, var(--color-white) 60%, var(--color-bg) 100%);
+}
+
+.co-hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.co-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--color-black);
+  margin-bottom: var(--space-lg);
+}
+
+.co-hero__subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-gray-600);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   STORY SECTION
+   ============================================ */
+.co-story {
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.co-story__content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.co-story h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--color-black);
+  margin-bottom: var(--space-xl);
+}
+
+.co-story p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-lg);
+}
+
+.co-story p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   PRINCIPLES
+   ============================================ */
+.co-principles {
+  padding: var(--space-4xl) 0;
+  background: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.co-principles__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.co-principles__header h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--color-black);
+}
+
+.co-principles__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.co-principle {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg, 12px);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-gray-200);
+  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+}
+
+.co-principle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.co-principle__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+
+.co-principle__icon--lavender { background: var(--color-lavender-pale); }
+.co-principle__icon--mint { background: rgba(64, 224, 208, 0.12); }
+.co-principle__icon--blush { background: var(--color-blush); }
+.co-principle__icon--amber { background: #FEF3C7; }
+
+.co-principle h3 {
+  font-size: 1.125rem;
+  font-weight: 650;
+  color: var(--color-black);
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.01em;
+}
+
+.co-principle p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-gray-600);
+}
+
+/* ============================================
+   FOUNDING STORY
+   ============================================ */
+.co-founding {
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.co-founding__content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.co-founding h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--color-black);
+  margin-bottom: var(--space-xl);
+}
+
+.co-founding p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-lg);
+}
+
+.co-founding p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   TEAM
+   ============================================ */
+.co-team {
+  padding: var(--space-4xl) 0;
+  background: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.co-team__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.co-team__header h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--color-black);
+}
+
+.co-team__grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.co-team__card {
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+}
+
+.co-team__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto var(--space-lg);
+}
+
+.co-team__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.co-team__photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--color-lavender-pale);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.co-team__card h3 {
+  font-size: 1.125rem;
+  font-weight: 650;
+  color: var(--color-black);
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.co-team__role {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.co-team__card p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-gray-600);
+}
+
+/* ============================================
+   SNAPSHOT
+   ============================================ */
+.co-snapshot {
+  padding: var(--space-3xl) 0 var(--space-4xl);
+  background: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.co-snapshot__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.co-snapshot__item {
+  padding: var(--space-xl) var(--space-md);
+}
+
+.co-snapshot__label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-sm);
+}
+
+.co-snapshot__value {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: 650;
+  color: var(--color-black);
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   DECORATIVE SHAPES — progressive opacity
+   ============================================ */
+.co-hero .deco-shape { opacity: 0.18; }
+.co-story .deco-shape { opacity: 0.22; }
+.co-principles .deco-shape { opacity: 0.35; }
+.co-founding .deco-shape { opacity: 0.38; }
+.co-team .deco-shape { opacity: 0.4; }
+.co-snapshot .deco-shape { opacity: 0.42; }
+
+/* ============================================
+   CTA — full-bleed on company page
+   ============================================ */
+.page-company .bottom-cta {
+  border-radius: 0;
+  margin: 0;
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-lavender-pale) 30%, var(--color-lavender-light) 100%);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .co-hero {
+    padding: calc(var(--header-height) + 4rem) 0 var(--space-3xl);
+  }
+
+  .co-principles__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .co-team__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .co-snapshot__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .co-hero {
+    padding: calc(var(--header-height) + 8rem) 0 var(--space-4xl);
+  }
+}

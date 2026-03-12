@@ -1,0 +1,59 @@
+# Collage.inc Redirect Map
+# WordPress → Redesign (301 permanent redirects)
+# Format: old_path new_path status_code
+#
+# Note: Cloudflare Pages can strip trailing slashes globally in project
+# settings (Settings → Builds & deployments → Compatibility flags).
+# These rules handle slug changes AND trailing slash variants.
+
+# ─── Pages ────────────────────────────────────────────────────────────────────
+
+/about/                 /about                  301
+/product                /product/overview       301
+/product/               /product/overview       301
+
+# ─── Blog posts with changed slugs ───────────────────────────────────────────
+
+/blog/5-reasons-its-time-to-switch-dams                                             /blog/5-reasons-to-switch-dams                      301
+/blog/5-reasons-its-time-to-switch-dams/                                            /blog/5-reasons-to-switch-dams                      301
+
+/blog/thinking-about-switching-dams-heres-what-top-marketing-teams-understand        /blog/thinking-about-switching-dams                 301
+/blog/thinking-about-switching-dams-heres-what-top-marketing-teams-understand/       /blog/thinking-about-switching-dams                 301
+
+/blog/wasted-time-and-lost-files-what-cloud-storage-is-costing-your-brand            /blog/cloud-storage-costing-your-brand              301
+/blog/wasted-time-and-lost-files-what-cloud-storage-is-costing-your-brand/           /blog/cloud-storage-costing-your-brand              301
+
+/blog/from-chaos-to-consistency-how-growing-brands-keep-their-marketing-on-point     /blog/how-growing-brands-manage-content-at-scale    301
+/blog/from-chaos-to-consistency-how-growing-brands-keep-their-marketing-on-point/    /blog/how-growing-brands-manage-content-at-scale    301
+
+/blog/content-permissions-simplifying-collaboration-and-control                      /blog/content-permissions                           301
+/blog/content-permissions-simplifying-collaboration-and-control/                     /blog/content-permissions                           301
+
+/blog/brand-portals-the-key-to-effortless-content-distribution                      /blog/brand-portals                                 301
+/blog/brand-portals-the-key-to-effortless-content-distribution/                     /blog/brand-portals                                 301
+
+/blog/10-reasons-it-might-be-time-to-adopt-a-dam                                    /blog/9-signs-to-adopt-a-dam                        301
+/blog/10-reasons-it-might-be-time-to-adopt-a-dam/                                   /blog/9-signs-to-adopt-a-dam                        301
+
+/blog/steve-baker-announcement                                                      /blog/steve-baker-joins-board                       301
+/blog/steve-baker-announcement/                                                     /blog/steve-baker-joins-board                       301
+
+# ─── Blog posts with same slug (trailing slash strip only) ────────────────────
+
+/blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials/    /blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials     301
+/blog/what-is-dam/                                          /blog/what-is-dam                                           301
+/blog/folders-collages-portals/                             /blog/folders-collages-portals                              301
+/blog/brandfolder-vs-collage/                               /blog/brandfolder-vs-collage                                301
+/blog/the-2200-ratio/                                       /blog/the-2200-ratio                                        301
+
+# ─── Trailing slash strips for pages ──────────────────────────────────────────
+
+/pricing/               /pricing                301
+/contact/               /contact                301
+/pricing-plans/         /pricing-plans          301
+
+# ─── www → apex domain (handle in Cloudflare DNS, not here) ──────────────────
+# Configure a CNAME or Page Rule: www.collage.inc → collage.inc
+
+# ─── Catch-all 404 ───────────────────────────────────────────────────────────
+# Cloudflare Pages automatically serves 404.html for missing routes

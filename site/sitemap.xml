@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://collage.inc</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Product Pages -->
+  <url>
+    <loc>https://collage.inc/product/overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/product/organize</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/product/discover</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/product/distribute</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/product/manage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Solutions Pages -->
+  <url>
+    <loc>https://collage.inc/solutions/marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/solutions/creative-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/solutions/revenue</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Company & Contact -->
+  <url>
+    <loc>https://collage.inc/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/pricing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://collage.inc/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/how-growing-brands-manage-content-at-scale</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/brandfolder-vs-collage</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/the-2200-ratio</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/5-reasons-to-switch-dams</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/thinking-about-switching-dams</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/cloud-storage-costing-your-brand</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/content-permissions</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/brand-portals</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/9-signs-to-adopt-a-dam</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/what-is-dam</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/folders-collages-portals</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/share-links-vs-brand-portals</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://collage.inc/blog/steve-baker-joins-board</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://collage.inc/blog/how-e4-replaced-3-tools-with-collage</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Note: pricing-plans is excluded (noindex) -->
+</urlset>

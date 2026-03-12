@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://collage.inc/sitemap.xml
+
+# Private pages
+Disallow: /pricing-plans
+Disallow: /blog/drafts/

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collage — Digital Asset Management for Growing Brands</title>
+  <meta name="description" content="The essentials of digital asset management for growing brands. Organize, discover, and distribute your content from one place.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://collage.inc">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Collage — Digital Asset Management for Growing Brands">
+  <meta property="og:description" content="The essentials of digital asset management for growing brands. Organize, discover, and distribute your content from one place.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://collage.inc">
+  <meta property="og:site_name" content="Collage">
+  <meta property="og:image" content="https://collage.inc/assets/og/default.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Collage — Digital Asset Management for Growing Brands">
+  <meta name="twitter:description" content="The essentials of digital asset management for growing brands. Organize, discover, and distribute your content from one place.">
+  <meta name="twitter:image" content="https://collage.inc/assets/og/default.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/Icon.svg">
+
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Collage Labs, Inc.",
+    "url": "https://collage.inc",
+    "logo": "https://collage.inc/assets/Logo.svg",
+    "description": "The essentials of digital asset management for growing brands. Organize, discover, and distribute your content from one place.",
+    "foundingLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      }
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5KNNS9Z7');</script>
+
+  <!-- Amplitude -->
+  <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.0-min.js.gz"></script>
+  <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.8.0-min.js.gz"></script>
+  <script>
+  window.amplitude.add(window.sessionReplay.plugin({sampleRate:1}))
+  .promise.then(function(){
+    window.amplitude.init('513a4cfbb24a873e6969c0087f87c0d8',{"autocapture":{"elementInteractions":true}});
+  });
+  </script>
+</head>
+<body class="page-home">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KNNS9Z7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  <!-- ========================================
+       HEADER — Linear-inspired, right-aligned
+       ======================================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Collage home">
+        <img src="assets/Logo.svg" alt="Collage" width="232" height="48">
+      </a>
+
+      <div class="header__right">
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul>
+            <li class="header__nav-item">
+              <button class="header__nav-trigger" aria-expanded="false">
+                Product
+                <svg class="chevron" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3.5l3 3 3-3"/></svg>
+              </button>
+              <div class="header__dropdown">
+                <div class="header__dropdown-col header__dropdown-col--nav">
+                  <div class="header__dropdown-label">Product</div>
+                  <a href="product/overview.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--brand-blue">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6473FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5"/><path d="M19 13v6a1 1 0 01-1 1H6a1 1 0 01-1-1v-6"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Overview</span>
+                      <span class="header__dropdown-desc">Everything Collage can do</span>
+                    </div>
+                  </a>
+                  <a href="product/organize.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--purple">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 2h9a2 2 0 012 2z"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Organize</span>
+                      <span class="header__dropdown-desc">Folders, tags, and custom fields</span>
+                    </div>
+                  </a>
+                  <a href="product/discover.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--amber">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Discover</span>
+                      <span class="header__dropdown-desc">AI search and smart filters</span>
+                    </div>
+                  </a>
+                  <a href="product/distribute.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--emerald">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.7914 12.6073C21.0355 12.398 21.1575 12.2934 21.2023 12.1689C21.2415 12.0597 21.2415 11.9401 21.2023 11.8309C21.1575 11.7064 21.0355 11.6017 20.7914 11.3925L12.3206 4.1319C11.9004 3.7717 11.6903 3.5916 11.5124 3.58719C11.3578 3.58336 11.2101 3.65128 11.1124 3.77116C11 3.90909 11 4.18583 11 4.7393V9.03456C8.86532 9.40801 6.91159 10.4896 5.45971 12.1138C3.87682 13.8844 3.00123 16.1758 3 18.5509V19.1628C4.04934 17.8988 5.35951 16.8764 6.84076 16.1658C8.1467 15.5393 9.55842 15.1682 11 15.0704V19.2605C11 19.814 11 20.0907 11.1124 20.2287C11.2101 20.3485 11.3578 20.4165 11.5124 20.4126C11.6903 20.4082 11.9004 20.2281 12.3206 19.8679L20.7914 12.6073Z" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Distribute</span>
+                      <span class="header__dropdown-desc">Portals, links, and embeds</span>
+                    </div>
+                  </a>
+                  <a href="product/manage.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--coral">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7F50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Manage</span>
+                      <span class="header__dropdown-desc">Versions, permissions, and analytics</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="header__dropdown-col header__dropdown-col--featured">
+                  <div class="header__dropdown-label">Featured</div>
+                  
+                  <a href="blog/content-permissions.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Product</span>
+                    <span class="header__dropdown-feature-title">Simplify collaboration with content permissions</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                  <a href="blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Guide</span>
+                    <span class="header__dropdown-feature-title">Cloud storage vs enterprise DAM vs essentials</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                  <a href="blog/folders-collages-portals.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Distribution</span>
+                    <span class="header__dropdown-feature-title">Folders, Collages, Portals — what's the difference?</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__nav-trigger" aria-expanded="false">
+                Solutions
+                <svg class="chevron" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3.5l3 3 3-3"/></svg>
+              </button>
+              <div class="header__dropdown">
+                <div class="header__dropdown-col header__dropdown-col--nav">
+                  <div class="header__dropdown-label">Solutions</div>
+                  <a href="solutions/marketing.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--coral">
+                      <svg width="16" height="16" viewBox="-1 0 26 28" fill="none" stroke="#FF7F50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.47 26C9.41 26.83 10.65 27.33 12 27.33C13.35 27.33 14.59 26.83 15.53 26M20 8.67C20 6.54 19.16 4.51 17.66 3.01C16.16 1.51 14.12 0.67 12 0.67C9.88 0.67 7.84 1.51 6.34 3.01C4.84 4.51 4 6.54 4 8.67C4 12.79 2.96 15.61 1.8 17.47C0.82 19.05 0.33 19.84 0.35 20.05C0.37 20.3 0.42 20.39 0.62 20.54C0.79 20.67 1.59 20.67 3.19 20.67H20.81C22.41 20.67 23.21 20.67 23.38 20.54C23.58 20.39 23.63 20.3 23.65 20.05C23.67 19.84 23.18 19.05 22.2 17.47C21.04 15.61 20 12.79 20 8.67Z"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Marketing</span>
+                      <span class="header__dropdown-desc">Eliminate asset requests and content sprawl</span>
+                    </div>
+                  </a>
+                  <a href="solutions/creative-design.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--blue">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6473FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10L14 6M2.5 21.5L5.884 21.124C6.298 21.078 6.505 21.055 6.698 20.993C6.869 20.937 7.032 20.859 7.183 20.76C7.352 20.648 7.5 20.501 7.794 20.206L21 7C22.105 5.895 22.105 4.105 21 3C19.895 1.895 18.105 1.895 17 3L3.794 16.206C3.5 16.501 3.352 16.648 3.241 16.817C3.141 16.968 3.063 17.131 3.008 17.302C2.945 17.496 2.922 17.702 2.876 18.116L2.5 21.5Z"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Creative &amp; Design</span>
+                      <span class="header__dropdown-desc">Find assets and use them where you work</span>
+                    </div>
+                  </a>
+                  <a href="solutions/revenue.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--teal">
+                      <svg width="16" height="16" viewBox="-1 -1 26 26" fill="none" stroke="#40E0D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.333H2.133C1.387 5.333 1.013 5.333 0.728 5.479C0.477 5.607 0.273 5.811 0.145 6.061C0 6.347 0 6.72 0 7.467V21.867C0 22.613 0 22.987 0.145 23.272C0.273 23.523 0.477 23.727 0.728 23.855C1.013 24 1.387 24 2.133 24H8M8 24H16M8 24V2.133C8 1.387 8 1.013 8.145 0.728C8.273 0.477 8.477 0.273 8.728 0.145C9.013 0 9.387 0 10.133 0H13.867C14.613 0 14.987 0 15.272 0.145C15.523 0.273 15.727 0.477 15.855 0.728C16 1.013 16 1.387 16 2.133V24M16 24H21.867C22.613 24 22.987 24 23.272 23.855C23.523 23.727 23.727 23.523 23.855 23.272C24 22.987 24 22.613 24 21.867V12.8C24 12.053 24 11.68 23.855 11.395C23.727 11.144 23.523 10.94 23.272 10.812C22.987 10.667 22.613 10.667 21.867 10.667H16"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Revenue</span>
+                      <span class="header__dropdown-desc">Arm sales with branded portals</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="header__dropdown-col header__dropdown-col--featured">
+                  <div class="header__dropdown-label">Featured</div>
+                  
+                  <a href="blog/the-2200-ratio.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Distribution</span>
+                    <span class="header__dropdown-feature-title">The 2:200 Ratio: Why external users scale your brand</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                  <a href="blog/brand-portals.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Distribution</span>
+                    <span class="header__dropdown-feature-title">Brand portals: effortless content distribution</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                  <a href="blog/how-e4-replaced-3-tools-with-collage.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Customer Story</span>
+                    <span class="header__dropdown-feature-title">How E4 replaced 3 tools with Collage</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__nav-trigger" aria-expanded="false">
+                Resources
+                <svg class="chevron" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3.5l3 3 3-3"/></svg>
+              </button>
+              <div class="header__dropdown">
+                <div class="header__dropdown-col header__dropdown-col--nav">
+                  <div class="header__dropdown-label">Resources</div>
+                  <a href="blog/index.html" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--coral">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7F50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Blog</span>
+                      <span class="header__dropdown-desc">Insights on DAM, brand, and content ops</span>
+                    </div>
+                  </a>
+                  <a href="https://collageinc.freshdesk.com/support/home" class="header__dropdown-item">
+                    <div class="header__dropdown-icon header__dropdown-icon--blue">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6473FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <div class="header__dropdown-text">
+                      <span class="header__dropdown-title">Help Center</span>
+                      <span class="header__dropdown-desc">Guides, tutorials, and FAQs</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="header__dropdown-col header__dropdown-col--featured">
+                  <div class="header__dropdown-label">Featured</div>
+                  
+                  <a href="blog/brandfolder-vs-collage.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Comparison</span>
+                    <span class="header__dropdown-feature-title">Brandfolder vs Collage: which DAM is right?</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                  <a href="blog/how-growing-brands-manage-content-at-scale.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Guide</span>
+                    <span class="header__dropdown-feature-title">How growing brands keep their marketing on point</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                  <a href="blog/5-reasons-to-switch-dams.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Guide</span>
+                    <span class="header__dropdown-feature-title">5 signs it's time to switch your DAM platform</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                
+                </div>
+              </div>
+            </li>
+            <li><a href="about.html">Company</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__divider"></div>
+        <div class="header__actions">
+          <a href="https://app.collage.inc/" class="header__signin">Sign in</a>
+          <a href="contact.html" class="btn btn--primary">Book a demo</a>
+        </div>
+      </div>
+
+      <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li class="mobile-menu__dropdown">
+        <button class="mobile-menu__toggle">Product <svg class="mobile-menu__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5l3 3 3-3"/></svg></button>
+        <ul class="mobile-menu__sub">
+          <li><a href="product/overview.html">Overview</a></li>
+          <li><a href="product/organize.html">Organize</a></li>
+          <li><a href="product/discover.html">Discover</a></li>
+          <li><a href="product/distribute.html">Distribute</a></li>
+          <li><a href="product/manage.html">Manage</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__dropdown">
+        <button class="mobile-menu__toggle">Solutions <svg class="mobile-menu__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5l3 3 3-3"/></svg></button>
+        <ul class="mobile-menu__sub">
+          <li><a href="solutions/marketing.html">Marketing</a></li>
+          <li><a href="solutions/creative-design.html">Creative & Design</a></li>
+          <li><a href="solutions/revenue.html">Revenue</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__dropdown">
+        <button class="mobile-menu__toggle">Resources <svg class="mobile-menu__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5l3 3 3-3"/></svg></button>
+        <ul class="mobile-menu__sub">
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="https://collageinc.freshdesk.com/support/home">Help Center</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">Company</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__actions">
+      <a href="https://app.collage.inc/" class="btn btn--secondary">Sign in</a>
+      <a href="contact.html" class="btn btn--primary">Book a demo</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ========================================
+         HERO — left-aligned, blog pill, single CTA
+         ======================================== -->
+    <section class="hero">
+      <!-- Decorative shapes — 10 shapes, well-spaced, largest at top tapering down -->
+      <div class="deco-shape" data-speed="0.2" style="top: 80px; right: -40px; width: 170px; transform: rotate(28deg);">
+        <img src="assets/Risorsa 12c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.23" style="top: 50px; right: 18%; width: 110px; transform: rotate(-22deg);">
+        <img src="assets/Risorsa 9c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.3" style="top: 180px; left: 12%; width: 65px; transform: rotate(55deg);">
+        <img src="assets/Risorsa 9c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.25" style="top: 300px; right: 10%; width: 90px; transform: rotate(-38deg);">
+        <img src="assets/Risorsa 14c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.18" style="top: 340px; left: 5%; width: 75px; transform: rotate(42deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.33" style="top: 480px; left: 2%; width: 120px; transform: rotate(-45deg);">
+        <img src="assets/Risorsa 10c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.25" style="top: 520px; right: 6%; width: 80px; transform: rotate(18deg);">
+        <img src="assets/Risorsa 12c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.22" style="top: 660px; left: 15%; width: 55px; transform: rotate(-15deg);">
+        <img src="assets/Risorsa 11c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.28" style="top: 720px; right: 20%; width: 60px; transform: rotate(-30deg);">
+        <img src="assets/Risorsa 14c.svg" alt="" aria-hidden="true">
+      </div>
+
+      <div class="container">
+        <div class="hero__content animate-in">
+          <h1>The essentials of<br>digital asset management<br>for growing brands</h1>
+          <p class="hero__subtitle">
+            Simple organization and powerful distribution for your brand's content.
+          </p>
+          <div class="hero__ctas">
+            <a href="contact.html" class="btn btn--primary btn--large">Book a demo</a>
+            <a href="blog/the-2200-ratio.html" class="hero__blog-pill">
+              <span class="hero__blog-pill__tag">New</span>
+              <span class="hero__blog-pill__text">The 2:200 Ratio: Why external users scale your brand</span>
+              <span class="hero__blog-pill__arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__image animate-in">
+          <div class="hero__image-wrapper">
+            <img src="assets/screenshots/f3p-dashboard.png" alt="Collage dashboard showing organized digital assets" class="hero__screenshot-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================
+         LOGO BAR
+         ======================================== -->
+    <section class="logos" id="customers">
+      <div class="container">
+        <div class="logo-carousel">
+          <div class="logo-carousel__track">
+            <img src="assets/logos/parker-baby.png" alt="Parker Baby" class="logo-carousel__logo--parker-baby" loading="lazy">
+            <img src="assets/logos/pluto.png" alt="Pluto TV" loading="lazy">
+            <img src="assets/logos/e4.png" alt="E4 Insurance" loading="lazy">
+            <img src="assets/logos/life360.png" alt="Life360" loading="lazy">
+            <img src="assets/logos/loopy.png" alt="Loopy" class="logo-carousel__logo--loopy" loading="lazy">
+            <img src="assets/logos/simplihome.png" alt="SimpliHome" loading="lazy">
+            <img src="assets/logos/urban-bonfire.png" alt="Urban Bonfire" class="logo-carousel__logo--bonfire" loading="lazy">
+            <img src="assets/logos/asi.png" alt="ASI" class="logo-carousel__logo--asi" loading="lazy">
+            <img src="assets/logos/saladmaster.png" alt="Saladmaster" loading="lazy">
+            <img src="assets/logos/atlantis.png" alt="Atlantis" class="logo-carousel__logo--atlantis" loading="lazy">
+            <img src="assets/logos/ronaldo.png" alt="Ronaldo Jewelry" class="logo-carousel__logo--ronaldo" loading="lazy">
+            <img src="assets/logos/rebelmaven.png" alt="Rebel Maven" loading="lazy">
+            <img src="assets/logos/golfkicks.png" alt="Golfkicks" loading="lazy">
+            <img src="assets/logos/regal-holdings.png" alt="Regal Holdings" class="logo-carousel__logo--regal" loading="lazy">
+            <img src="assets/logos/aev.svg" alt="AEV" class="logo-carousel__logo--aev" loading="lazy">
+            <img src="assets/logos/wheeled-coach.svg" alt="Wheeled Coach" loading="lazy">
+            <img src="assets/logos/havis.svg" alt="Havis" loading="lazy">
+            <img src="assets/logos/road-rescue.svg" alt="Road Rescue" loading="lazy">
+            <!-- Duplicate set for seamless loop -->
+            <img src="assets/logos/parker-baby.png" alt="Parker Baby" class="logo-carousel__logo--parker-baby" loading="lazy">
+            <img src="assets/logos/pluto.png" alt="Pluto TV" loading="lazy">
+            <img src="assets/logos/e4.png" alt="E4 Insurance" loading="lazy">
+            <img src="assets/logos/life360.png" alt="Life360" loading="lazy">
+            <img src="assets/logos/loopy.png" alt="Loopy" class="logo-carousel__logo--loopy" loading="lazy">
+            <img src="assets/logos/simplihome.png" alt="SimpliHome" loading="lazy">
+            <img src="assets/logos/urban-bonfire.png" alt="Urban Bonfire" class="logo-carousel__logo--bonfire" loading="lazy">
+            <img src="assets/logos/asi.png" alt="ASI" class="logo-carousel__logo--asi" loading="lazy">
+            <img src="assets/logos/saladmaster.png" alt="Saladmaster" loading="lazy">
+            <img src="assets/logos/atlantis.png" alt="Atlantis" class="logo-carousel__logo--atlantis" loading="lazy">
+            <img src="assets/logos/ronaldo.png" alt="Ronaldo Jewelry" class="logo-carousel__logo--ronaldo" loading="lazy">
+            <img src="assets/logos/rebelmaven.png" alt="Rebel Maven" loading="lazy">
+            <img src="assets/logos/golfkicks.png" alt="Golfkicks" loading="lazy">
+            <img src="assets/logos/regal-holdings.png" alt="Regal Holdings" class="logo-carousel__logo--regal" loading="lazy">
+            <img src="assets/logos/aev.svg" alt="AEV" class="logo-carousel__logo--aev" loading="lazy">
+            <img src="assets/logos/wheeled-coach.svg" alt="Wheeled Coach" loading="lazy">
+            <img src="assets/logos/havis.svg" alt="Havis" loading="lazy">
+            <img src="assets/logos/road-rescue.svg" alt="Road Rescue" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         FEATURES — "Focused on the essentials"
+         ======================================== -->
+    <section class="features section" id="features">
+      <!-- Decorative shapes — 4 shapes -->
+      <div class="deco-shape" data-speed="0.23" style="top: 60px; right: -30px; width: 140px; transform: rotate(12deg);">
+        <img src="assets/Risorsa 9c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape" data-speed="0.28" style="top: 50%; left: -35px; width: 130px; transform: rotate(-10deg);">
+        <img src="assets/Risorsa 10c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape deco-shape--blush" data-speed="0.18" style="top: 30%; left: 4%; width: 65px; transform: rotate(6deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape deco-shape--lavender" data-speed="0.33" style="top: 75%; right: 4%; width: 60px; transform: rotate(-4deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+
+      <div class="container">
+        <div class="features__header animate-in">
+          <h2>Focused on the essentials.</h2>
+          <p>Built for simplicity and creative distribution from day one.</p>
+        </div>
+
+        <div class="features__grid stagger-children">
+          <!-- Organize (tall left card) -->
+          <div class="feature-card animate-in">
+            <div class="feature-card__icon feature-card__icon--purple">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8B6CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/>
+              </svg>
+            </div>
+            <h3>Organize</h3>
+            <p>Structure your content library with folders, tags, and smart collections. Everything in its place.</p>
+            <a href="product/organize.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <div class="feature-card__visual feature-visual--organize feature-visual--composed">
+              <div class="organize-composed">
+                <img src="assets/product/f3p-add-to-collage.png" alt="Add to collage menu" class="organize-composed__layer organize-composed__layer--menu" loading="lazy">
+                <img src="assets/product/collage-card-wild-ones.png" alt="Wild Ones collage card" class="organize-composed__layer organize-composed__layer--card" loading="lazy">
+                <img src="assets/product/add-tags-dialog.png" alt="Add tags dialog" class="organize-composed__layer organize-composed__layer--tags" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Discover -->
+          <div class="feature-card animate-in">
+            <div class="feature-card__icon feature-card__icon--amber">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+              </svg>
+            </div>
+            <h3>Discover</h3>
+            <p>AI-powered search finds your best content fast. No more digging through folders.</p>
+            <a href="product/discover.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <div class="feature-card__visual feature-visual--video feature-visual--discover">
+              <video autoplay loop muted playsinline>
+                <source src="assets/homepage-discover.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <!-- Distribute -->
+          <div class="feature-card animate-in">
+            <div class="feature-card__icon feature-card__icon--emerald">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.7914 12.6073C21.0355 12.398 21.1575 12.2934 21.2023 12.1689C21.2415 12.0597 21.2415 11.9401 21.2023 11.8309C21.1575 11.7064 21.0355 11.6017 20.7914 11.3925L12.3206 4.1319C11.9004 3.7717 11.6903 3.5916 11.5124 3.58719C11.3578 3.58336 11.2101 3.65128 11.1124 3.77116C11 3.90909 11 4.18583 11 4.7393V9.03456C8.86532 9.40801 6.91159 10.4896 5.45971 12.1138C3.87682 13.8844 3.00123 16.1758 3 18.5509V19.1628C4.04934 17.8988 5.35951 16.8764 6.84076 16.1658C8.1467 15.5393 9.55842 15.1682 11 15.0704V19.2605C11 19.814 11 20.0907 11.1124 20.2287C11.2101 20.3485 11.3578 20.4165 11.5124 20.4126C11.6903 20.4082 11.9004 20.2281 12.3206 19.8679L20.7914 12.6073Z" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Distribute</h3>
+            <p>Share links, brand portals, and integrations. Get content where it needs to go.</p>
+            <a href="product/distribute.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <div class="feature-card__visual feature-visual--video feature-visual--distribute">
+              <video autoplay loop muted playsinline>
+                <source src="assets/homepage-distribute.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <!-- Manage -->
+          <div class="feature-card animate-in">
+            <div class="feature-card__icon feature-card__icon--coral">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF7F50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </div>
+            <h3>Manage</h3>
+            <p>Version history, permissions, transformations, and analytics. Stay in control.</p>
+            <a href="product/manage.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <div class="feature-card__visual feature-visual--manage feature-visual--composed">
+              <div class="manage-composed">
+                <div class="manage-composed__panel manage-composed__panel--members">
+                  <div class="manage-mini__header">
+                    <span class="manage-mini__title">Members</span>
+                    <span class="manage-mini__action">+ Invite</span>
+                  </div>
+                  <div class="manage-mini__row">
+                    <span class="manage-mini__avatar" style="background: var(--color-primary);">SC</span>
+                    <span class="manage-mini__name">Sarah Chen</span>
+                    <span class="manage-mini__role manage-mini__role--admin">Admin</span>
+                  </div>
+                  <div class="manage-mini__row">
+                    <span class="manage-mini__avatar" style="background: var(--color-purple);">AR</span>
+                    <span class="manage-mini__name">Alex Rivera</span>
+                    <span class="manage-mini__role manage-mini__role--manager">Manager</span>
+                  </div>
+                  <div class="manage-mini__row">
+                    <span class="manage-mini__avatar" style="background: var(--color-coral);">JK</span>
+                    <span class="manage-mini__name">Jordan Kim</span>
+                    <span class="manage-mini__role">Viewer</span>
+                  </div>
+                </div>
+                <div class="manage-composed__panel manage-composed__panel--resize">
+                  <div class="manage-mini__header">
+                    <span class="manage-mini__title">Transform</span>
+                    <span class="manage-mini__action">1200 × 628</span>
+                  </div>
+                  <div class="manage-mini__preview">
+                    <img src="assets/product/sample-fanny-pack-9.png" alt="Product image" class="manage-mini__image">
+                    <div class="manage-mini__crop"></div>
+                  </div>
+                  <div class="manage-mini__controls">
+                    <span class="manage-mini__chip">Custom</span>
+                    <span class="manage-mini__chip">WebP</span>
+                    <span class="manage-mini__chip">90%</span>
+                    <span class="manage-mini__chip manage-mini__chip--coral">Download</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="distribution section" id="distribution">
+      <!-- Decorative shapes — 3 shapes -->
+      <div class="deco-shape deco-shape--blush" data-speed="0.2" style="top: 15%; left: 3%; width: 70px; transform: rotate(3deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape deco-shape--lavender" data-speed="0.3" style="top: 55%; right: 3%; width: 65px; transform: rotate(-3deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape deco-shape--mint" data-speed="0.25" style="top: 80%; left: 5%; width: 55px; transform: rotate(2deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+
+      <div class="container">
+        <div class="distribution__layout">
+          <div class="distribution__header animate-in">
+            <h2>Distribution on day one.</h2>
+            <p>Share assets via branded portals and get your content into the right hands — without the back-and-forth.</p>
+          </div>
+
+          <div class="distribution__showcase animate-in">
+            <div class="distribution__portal">
+              <video autoplay loop muted playsinline style="width: 100%; border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 12px 32px rgba(0,0,0,0.06);">
+                <source src="assets/f3p-portal.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIAL + USE CASES
+         ======================================== -->
+    <div class="testimonial-wrap section" id="testimonial">
+      <!-- Decorative shapes — 2 shapes -->
+      <div class="deco-shape deco-shape--lavender" data-speed="0.28" style="top: 20%; right: 2%; width: 60px; transform: rotate(-2deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="deco-shape deco-shape--blush" data-speed="0.23" style="top: 70%; left: 3%; width: 55px; transform: rotate(3deg);">
+        <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+      </div>
+    <section class="testimonial">
+      <div class="container">
+        <div class="testimonial__quote animate-in">
+          <div class="testimonial__label">What our customers say</div>
+          <blockquote>
+            "By far the most visual and efficient way of managing my product and marketing content."
+          </blockquote>
+          <div class="testimonial__author">
+            <strong>Ty Stuart</strong>, Golfkicks
+          </div>
+        </div>
+
+        <!-- Use case cards -->
+        <div class="use-cases">
+          <div class="use-cases__grid stagger-children">
+            <div class="use-case-card animate-in">
+              <div class="use-case-card__visual use-case-card__visual--marketing" style="background: linear-gradient(135deg, #FFF0EB 0%, var(--color-blush) 100%);">
+                <div class="use-case-fields">
+                  <div class="use-case-fields__row">
+                    <span class="use-case-fields__label">Season</span>
+                    <span class="use-case-fields__value">
+                      <span class="use-case-fields__tag use-case-fields__tag--coral">Fall 2025</span>
+                      <span class="use-case-fields__tag use-case-fields__tag--blush">Holiday</span>
+                    </span>
+                  </div>
+                  <div class="use-case-fields__row">
+                    <span class="use-case-fields__label">Campaign</span>
+                    <span class="use-case-fields__value">
+                      <span class="use-case-fields__tag use-case-fields__tag--lavender">Back to School</span>
+                    </span>
+                  </div>
+                  <div class="use-case-fields__row">
+                    <span class="use-case-fields__label">Model</span>
+                    <span class="use-case-fields__value use-case-fields__value--text">Sarah K.</span>
+                  </div>
+                  <div class="use-case-fields__row">
+                    <span class="use-case-fields__label">Status</span>
+                    <span class="use-case-fields__value">
+                      <span class="use-case-fields__dot use-case-fields__dot--green"></span>
+                      Approved
+                    </span>
+                  </div>
+                  <div class="use-case-fields__row">
+                    <span class="use-case-fields__label">Channel</span>
+                    <span class="use-case-fields__value">
+                      <span class="use-case-fields__tag use-case-fields__tag--mint">Social</span>
+                      <span class="use-case-fields__tag use-case-fields__tag--blue">Email</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <h4>For Marketing</h4>
+              <p>Eliminate asset requests and give your team self-serve access to every file they need.</p>
+              <a href="solutions/marketing.html" class="btn btn--ghost use-case-card__link">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+
+            <div class="use-case-card animate-in">
+              <div class="use-case-card__visual use-case-card__visual--creative" style="background: linear-gradient(135deg, #F5F5FD 0%, var(--color-lavender-pale) 100%);">
+                <div class="use-case-hub">
+                  <div class="use-case-hub__center">
+                    <img src="assets/Icon.svg" alt="Collage" width="32" height="32">
+                  </div>
+                  <div class="use-case-hub__orbit">
+                    <div class="use-case-hub__icon use-case-hub__icon--figma" title="Figma">
+                      <img src="assets/integrations/figma.png" alt="Figma" width="24" height="24">
+                    </div>
+                    <div class="use-case-hub__icon use-case-hub__icon--photoshop" title="Photoshop">
+                      <img src="assets/integrations/photoshop.png" alt="Photoshop" width="24" height="24">
+                    </div>
+                    <div class="use-case-hub__icon use-case-hub__icon--indesign" title="InDesign">
+                      <img src="assets/integrations/indesign.png" alt="InDesign" width="24" height="24">
+                    </div>
+                    <div class="use-case-hub__icon use-case-hub__icon--illustrator" title="Illustrator">
+                      <img src="assets/integrations/illustrator.png" alt="Illustrator" width="24" height="24">
+                    </div>
+                    <div class="use-case-hub__icon use-case-hub__icon--powerpoint" title="PowerPoint">
+                      <img src="assets/integrations/powerpoint.png" alt="PowerPoint" width="24" height="24">
+                    </div>
+                    <div class="use-case-hub__icon use-case-hub__icon--slides" title="Google Slides">
+                      <img src="assets/integrations/google-slides.png" alt="Google Slides" width="24" height="24">
+                    </div>
+                    <div class="use-case-hub__icon use-case-hub__icon--canva" title="Canva">
+                      <img src="assets/integrations/canva.png" alt="Canva" width="24" height="24">
+                    </div>
+                    <div class="use-case-hub__icon use-case-hub__icon--api" title="API">
+                      <img src="assets/integrations/api.svg" alt="API" width="24" height="24">
+                    </div>
+                  </div>
+                  <svg class="use-case-hub__lines" viewBox="0 0 300 300" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="hub-grad-0" x1="150" y1="150" x2="150" y2="27" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                      <linearGradient id="hub-grad-1" x1="150" y1="150" x2="257" y2="55" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                      <linearGradient id="hub-grad-2" x1="150" y1="150" x2="280" y2="150" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                      <linearGradient id="hub-grad-3" x1="150" y1="150" x2="237" y2="255" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                      <linearGradient id="hub-grad-4" x1="150" y1="150" x2="63" y2="255" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                      <linearGradient id="hub-grad-5" x1="150" y1="150" x2="20" y2="150" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                      <linearGradient id="hub-grad-6" x1="150" y1="150" x2="43" y2="55" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                      <linearGradient id="hub-grad-7" x1="150" y1="150" x2="150" y2="273" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#7B7BC8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#9B9BDE" stop-opacity="0.15"/>
+                      </linearGradient>
+                    </defs>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="150" y2="27" stroke="url(#hub-grad-0)" stroke-width="1.5" style="--delay: 0s"/>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="257" y2="55" stroke="url(#hub-grad-1)" stroke-width="1.5" style="--delay: 0.4s"/>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="280" y2="150" stroke="url(#hub-grad-2)" stroke-width="1.5" style="--delay: 0.8s"/>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="237" y2="255" stroke="url(#hub-grad-3)" stroke-width="1.5" style="--delay: 1.2s"/>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="63" y2="255" stroke="url(#hub-grad-4)" stroke-width="1.5" style="--delay: 1.6s"/>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="20" y2="150" stroke="url(#hub-grad-5)" stroke-width="1.5" style="--delay: 2.0s"/>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="43" y2="55" stroke="url(#hub-grad-6)" stroke-width="1.5" style="--delay: 2.4s"/>
+                    <line class="use-case-hub__line" x1="150" y1="150" x2="150" y2="273" stroke="url(#hub-grad-7)" stroke-width="1.5" style="--delay: 2.8s"/>
+                  </svg>
+                  <div class="use-case-hub__glow" aria-hidden="true"></div>
+                </div>
+              </div>
+              <h4>For Creative & Design</h4>
+              <p>Find the right asset and use it where you work — including inside Figma and Adobe.</p>
+              <a href="solutions/creative-design.html" class="btn btn--ghost use-case-card__link">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+
+            <div class="use-case-card animate-in">
+              <div class="use-case-card__visual use-case-card__visual--revenue" style="background: linear-gradient(135deg, #EFF8F5 0%, var(--color-mint) 100%);">
+                <div class="use-case-chart">
+                  <div class="use-case-chart__header">Link Analytics</div>
+                  <div class="use-case-chart__stats">
+                    <div class="use-case-chart__stat">
+                      <span class="use-case-chart__stat-value">247</span>
+                      <span class="use-case-chart__stat-label">Views</span>
+                    </div>
+                    <div class="use-case-chart__stat">
+                      <span class="use-case-chart__stat-value">84</span>
+                      <span class="use-case-chart__stat-label">Downloads</span>
+                    </div>
+                    <div class="use-case-chart__stat">
+                      <span class="use-case-chart__stat-value">12</span>
+                      <span class="use-case-chart__stat-label">Visitors</span>
+                    </div>
+                  </div>
+                  <div class="use-case-chart__bars">
+                    <div class="use-case-chart__bar" style="height: 30%;"></div>
+                    <div class="use-case-chart__bar use-case-chart__bar--alt" style="height: 45%;"></div>
+                    <div class="use-case-chart__bar" style="height: 60%;"></div>
+                    <div class="use-case-chart__bar use-case-chart__bar--alt" style="height: 80%;"></div>
+                    <div class="use-case-chart__bar" style="height: 100%;"></div>
+                    <div class="use-case-chart__bar use-case-chart__bar--alt" style="height: 70%;"></div>
+                    <div class="use-case-chart__bar" style="height: 90%;"></div>
+                    <div class="use-case-chart__bar use-case-chart__bar--alt" style="height: 55%;"></div>
+                  </div>
+                </div>
+              </div>
+              <h4>For Revenue</h4>
+              <p>Give revenue teams instant access to on-brand content — and the data to prove it works.</p>
+              <a href="solutions/revenue.html" class="btn btn--ghost use-case-card__link">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- ========================================
+         BLOG
+         ======================================== -->
+    <section class="blog section" id="blog">
+      <div class="container">
+        <div class="blog__header animate-in">
+          <h2>From the blog</h2>
+          <a href="blog/index.html" class="btn btn--ghost">View all posts <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+
+        <div class="blog__featured stagger-children">
+          <!-- Featured / large post -->
+          <a href="blog/the-2200-ratio.html" class="blog-card blog-card--featured animate-in">
+            <div class="blog-card__image">
+              <img src="assets/blog/the-2200-ratio.webp" alt="The 2:200 Ratio: Why External Users Scale Your Brand">
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__tag">Distribution</div>
+              <div class="blog-card__title">The 2:200 Ratio: Why External Users Scale Your Brand</div>
+              <div class="blog-card__excerpt">The best DAMs don't just organize files. They power self-serve distribution for hundreds of external users.</div>
+              <span class="blog-card__read">Read more &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Stacked smaller posts -->
+          <div class="blog__stack">
+            <a href="blog/brand-portals.html" class="blog-card blog-card--compact animate-in">
+              <div class="blog-card__image">
+                <img src="assets/blog/brand-portals.jpg" alt="Brand Portals: The Key to Effortless Content Distribution">
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__tag">Distribution</div>
+                <div class="blog-card__title">Brand Portals: The Key to Effortless Content Distribution</div>
+                <span class="blog-card__read">Read more &rarr;</span>
+              </div>
+            </a>
+
+            <a href="blog/9-signs-to-adopt-a-dam.html" class="blog-card blog-card--compact animate-in">
+              <div class="blog-card__image">
+                <img src="assets/blog/9-signs-to-adopt-dam.jpg" alt="9 Signs It's Time To Adopt A DAM">
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__tag">Guide</div>
+                <div class="blog-card__title">9 Signs It's Time To Adopt A DAM</div>
+                <span class="blog-card__read">Read more &rarr;</span>
+              </div>
+            </a>
+
+            <a href="blog/5-reasons-to-switch-dams.html" class="blog-card blog-card--compact animate-in">
+              <div class="blog-card__image">
+                <img src="assets/blog/5-reasons-to-switch-dams.jpg" alt="5 Signs It's Time to Switch Your DAM Platform">
+              </div>
+              <div class="blog-card__body">
+                <div class="blog-card__tag">Guide</div>
+                <div class="blog-card__title">5 Signs It's Time to Switch Your DAM Platform</div>
+                <span class="blog-card__read">Read more &rarr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         BOTTOM CTA
+         ======================================== -->
+    <section class="bottom-cta">
+      <div class="container">
+        <div class="animate-in">
+          <h2>Get more value<br>from your content.</h2>
+          <a href="contact.html" class="btn btn--primary btn--large">Book a demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer">
+    <img src="assets/Risorsa 9c.svg" alt="" class="deco-shape" style="top: 8%; left: 3%; width: 90px; transform: rotate(-15deg);" data-speed="0">
+    <img src="assets/Risorsa 13c.svg" alt="" class="deco-shape" style="top: 55%; left: 2%; width: 50px; transform: rotate(25deg);" data-speed="0">
+    <img src="assets/Risorsa 11c.svg" alt="" class="deco-shape" style="bottom: 10%; left: 6%; width: 65px; transform: rotate(-8deg);" data-speed="0">
+    <img src="assets/Risorsa 12c.svg" alt="" class="deco-shape" style="top: 15%; right: 8%; width: 70px; transform: rotate(20deg);" data-speed="0">
+    <img src="assets/Risorsa 10c.svg" alt="" class="deco-shape" style="top: 60%; right: 18%; width: 55px; transform: rotate(-30deg);" data-speed="0">
+    <img src="assets/Risorsa 14c.svg" alt="" class="deco-shape" style="bottom: 15%; right: 2%; width: 80px; transform: rotate(12deg);" data-speed="0">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Collage home">
+            <img src="assets/Logo-white.svg" alt="Collage">
+          </a>
+          <p class="footer__tagline">The essentials of digital asset management for growing brands.</p>
+        </div>
+        <div class="footer__columns">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Product</h4>
+            <a href="product/overview.html">Overview</a>
+            <a href="product/organize.html">Organize</a>
+            <a href="product/discover.html">Discover</a>
+            <a href="product/distribute.html">Distribute</a>
+            <a href="product/manage.html">Manage</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Solutions</h4>
+            <a href="solutions/marketing.html">Marketing</a>
+            <a href="solutions/creative-design.html">Creative &amp; Design</a>
+            <a href="solutions/revenue.html">Revenue</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Resources</h4>
+            <a href="blog/index.html">Blog</a>
+            <a href="https://collageinc.freshdesk.com/support/home">Help Center</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Company</h4>
+            <a href="about.html">About</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Collage Labs, Inc. All rights reserved.</span>
+        <div class="footer__legal">
+          <a href="https://www.collage.inc/privacy-policy/">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
