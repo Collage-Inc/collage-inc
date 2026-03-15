@@ -819,6 +819,88 @@
   transform: translate(6px, 6px);
 }
 
+/* ---- Organize visuals — mobile overrides ---- */
+@media (max-width: 767px) {
+  .prod-composed {
+    padding-bottom: 75%;
+    margin-top: 1rem;
+  }
+
+  /* Folders — centered, front down+right, accents down+right */
+  .prod-section:nth-of-type(3) .prod-composed__back {
+    width: 105%;
+    right: auto;
+    left: -2%;
+  }
+
+  .prod-section:nth-of-type(3) .prod-composed__front {
+    width: 72%;
+    right: auto;
+    left: 22%;
+    top: 28%;
+  }
+
+  .prod-composed__accent--folder-card {
+    width: 120px;
+    left: 8%;
+    bottom: calc(2% - 2px);
+  }
+
+  .prod-composed__accent--select-action {
+    width: 80px;
+    left: 30%;
+    bottom: calc(-2% + 4px);
+  }
+
+  /* Tags — preserve back layer size */
+  .prod-section:nth-of-type(5) .prod-composed__back {
+    width: 60%;
+    left: 15%;
+  }
+
+  /* Collages — add spacing above visual */
+  .prod-section:nth-child(even) .prod-composed {
+    margin-top: 1.5rem;
+  }
+
+  .prod-composed__accent--add-collage {
+    width: 180px;
+    left: calc(-4% + 10px);
+    bottom: -5px;
+  }
+
+  /* Tags — add-tags down, sidebar right */
+  .prod-composed__accent--tags-panel {
+    width: 160px;
+    right: 2%;
+    top: 5%;
+  }
+
+  .prod-composed__accent--filter-tags {
+    width: 180px;
+    left: 2%;
+    top: -2%;
+  }
+
+  .prod-composed__accent--add-tags {
+    width: 240px;
+    left: calc(2% - 30px);
+    bottom: calc(5% - 60px);
+  }
+
+  /* Custom Fields — dialog right+down */
+  .prod-section:nth-of-type(6) .prod-composed__back {
+    width: 90%;
+    left: 5%;
+  }
+
+  .prod-composed__accent--custom-fields-dialog {
+    width: 216px;
+    left: 1%;
+    bottom: calc(-8% + 20px);
+  }
+}
+
 /* Discover — Search Like You Think visual */
 .prod-composed--search {
   padding-bottom: 110%;
