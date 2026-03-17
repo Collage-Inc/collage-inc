@@ -51,6 +51,7 @@
 /pricing/               /pricing                301
 /contact/               /contact                301
 /pricing-plans/         /pricing-plans          301
+/privacy-policy/        /privacy-policy         301
 
 # ─── www → apex domain (handle in Cloudflare DNS, not here) ──────────────────
 # Configure a CNAME or Page Rule: www.collage.inc → collage.inc

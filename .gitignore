@@ -2,6 +2,7 @@
 /*
 !site/
 !.gitignore
+!README.md
 
 # OS files
 .DS_Store
