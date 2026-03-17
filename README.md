@@ -74,6 +74,44 @@ Each page sets accent colors via body class:
 | `.page-creative` | Blue `#6473FF` | Solutions — Creative |
 | `.page-revenue` | Teal `#40E0D0` | Solutions — Revenue |
 
+## Blog Placement & Content Management
+
+Blog content is drafted and reviewed in **Notion** (see the "Collage.inc Marketing Site" parent page). Once approved, copy is manually applied to the HTML files. There is no automated sync — Notion is the editorial workspace, the repo is the source of truth.
+
+### Blog post placements
+
+There are three places in the site where specific blog posts are surfaced. All three are hardcoded in HTML and must be updated manually when rotating content.
+
+#### 1. Hero blog pill
+A small pill link beneath the hero headline, pointing to one featured post.
+
+| Page | File | Current post |
+|---|---|---|
+| Homepage | `site/index.html` | The 2:200 Ratio |
+| Solutions — Marketing | `site/solutions/marketing.html` | How to eliminate asset request bottlenecks |
+| Solutions — Creative | `site/solutions/creative-design.html` | *(set per page)* |
+| Solutions — Revenue | `site/solutions/revenue.html` | *(set per page)* |
+
+To update: edit the `href`, `hero__blog-pill__tag`, and `hero__blog-pill__text` values in the hero section of each page.
+
+#### 2. Nav dropdown featured posts
+Each of the three main nav dropdowns (Product, Solutions, Resources) shows 2–3 featured blog links in a right-hand column.
+
+To update: find the `header__dropdown-col--featured` block inside the relevant `<nav>` dropdown in any HTML file and edit the `header__dropdown-feature` links. **Must be updated in every HTML file** since the header is duplicated across all pages — search for the post title or URL across the repo to find all instances.
+
+#### 3. Blog index featured card
+The blog listing page (`site/blog/index.html`) shows one post as a large featured card above the grid.
+
+To update: edit the first `blog-card--featured` element in `site/blog/index.html`.
+
+### Notion databases
+
+Copy review and blog management are tracked in four Notion databases:
+- **Redesign Page Tracker** — status of each page
+- **Blog Content Management** — blog post pipeline
+- **Site Pages - Web Data** — live page metadata
+- **Copy Review** — draft copy for editorial review (parent: "Collage.inc Marketing Site")
+
 ## SEO & Production
 
 - **OG tags + Twitter cards** on all 18 pages
