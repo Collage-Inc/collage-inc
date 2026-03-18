@@ -3144,6 +3144,10 @@ p {
   margin-bottom: var(--space-2xl);
 }
 
+.article__hero .container {
+  max-width: 760px;
+}
+
 .article__hero-image {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -3195,6 +3199,14 @@ p {
 .article__body ol {
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
+}
+
+.article__body ul {
+  list-style: disc;
+}
+
+.article__body ol {
+  list-style: decimal;
 }
 
 .article__body li {

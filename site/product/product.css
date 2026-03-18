@@ -2144,6 +2144,10 @@
   position: relative;
 }
 
+.page-distribute .prod-proof {
+  padding-top: calc(var(--space-2xl) + 3rem);
+}
+
 .prod-proof blockquote {
   font-family: var(--font);
   font-size: clamp(1.125rem, 2.5vw, 1.375rem);
@@ -2151,7 +2155,7 @@
   line-height: 1.45;
   color: var(--color-black);
   max-width: 600px;
-  margin: 0 auto var(--space-sm);
+  margin: 0 auto var(--space-lg);
 }
 
 .prod-proof__author {
@@ -2896,9 +2900,9 @@
 }
 
 .page-distribute .prod-composed--portals .prod-composed__front {
-  width: 95%;
+  width: 80%;
   bottom: 0;
-  right: -190px;
+  right: -90px;
   top: auto;
   left: auto;
   border-radius: var(--radius-lg);

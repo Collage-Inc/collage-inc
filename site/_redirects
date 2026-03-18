@@ -23,8 +23,8 @@
 /blog/wasted-time-and-lost-files-what-cloud-storage-is-costing-your-brand            /blog/cloud-storage-costing-your-brand              301
 /blog/wasted-time-and-lost-files-what-cloud-storage-is-costing-your-brand/           /blog/cloud-storage-costing-your-brand              301
 
-/blog/from-chaos-to-consistency-how-growing-brands-keep-their-marketing-on-point     /blog/how-growing-brands-manage-content-at-scale    301
-/blog/from-chaos-to-consistency-how-growing-brands-keep-their-marketing-on-point/    /blog/how-growing-brands-manage-content-at-scale    301
+/blog/from-chaos-to-consistency-how-growing-brands-keep-their-marketing-on-point     /blog/from-chaos-to-consistency                     301
+/blog/from-chaos-to-consistency-how-growing-brands-keep-their-marketing-on-point/    /blog/from-chaos-to-consistency                     301
 
 /blog/content-permissions-simplifying-collaboration-and-control                      /blog/content-permissions                           301
 /blog/content-permissions-simplifying-collaboration-and-control/                     /blog/content-permissions                           301
@@ -52,6 +52,7 @@
 /contact/               /contact                301
 /pricing-plans/         /pricing-plans          301
 /privacy-policy/        /privacy-policy         301
+/terms-of-service/      /terms-of-service       301
 
 # ─── www → apex domain (handle in Cloudflare DNS, not here) ──────────────────
 # Configure a CNAME or Page Rule: www.collage.inc → collage.inc

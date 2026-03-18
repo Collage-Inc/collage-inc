@@ -1416,13 +1416,13 @@
    SOCIAL PROOF
    ============================================ */
 .sol-proof {
-  padding: var(--space-2xl) 0 var(--space-4xl);
+  padding: var(--space-3xl) 0 var(--space-4xl);
   text-align: center;
 }
 
 .sol-proof__quote {
   max-width: 600px;
-  margin: 0 auto var(--space-xl);
+  margin: 0 auto var(--space-2xl);
 }
 
 .sol-proof__label {
@@ -1440,7 +1440,7 @@
   font-weight: 500;
   line-height: 1.45;
   color: var(--color-black);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
 
 .sol-proof__author {
