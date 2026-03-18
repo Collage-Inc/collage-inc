@@ -3,6 +3,9 @@
 !site/
 !.gitignore
 !README.md
+!wrangler.jsonc
+!package.json
+!package-lock.json
 
 # OS files
 .DS_Store
