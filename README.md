@@ -1,6 +1,6 @@
 # Collage.inc — Website Redesign
 
-Static HTML/CSS/JS marketing site for [Collage](https://collage.inc), a digital asset management platform for growing brands.
+Static HTML/CSS/JS marketing site for [Collage](https://collage.inc), a Digital Asset Management platform for growing brands.
 
 ## Project Structure
 
