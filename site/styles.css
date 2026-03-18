@@ -923,10 +923,11 @@ p {
 .logo-carousel__track {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 6.25rem;
   width: max-content;
-  animation: logo-scroll 40s linear infinite;
   pointer-events: none;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .logo-carousel__track img {
@@ -976,18 +977,9 @@ p {
   height: 18px !important;
 }
 
-@keyframes logo-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
+@media (max-width: 768px) {
   .logo-carousel__track {
-    animation: none;
+    gap: 3.5rem;
   }
 }
 
@@ -1961,6 +1953,14 @@ p {
 .testimonial__author strong {
   color: var(--color-black);
   font-weight: 600;
+}
+
+.testimonial__logo {
+  display: block;
+  height: 28px;
+  width: auto;
+  margin: var(--space-md) auto 0;
+  opacity: 0.55;
 }
 
 /* Use case cards */

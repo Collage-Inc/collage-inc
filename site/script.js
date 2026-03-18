@@ -272,6 +272,41 @@
     });
   }
 
+  // --- Logo carousel (rAF-driven, no CSS animation jump) ---
+  var carouselTrack = document.querySelector('.logo-carousel__track');
+
+  if (carouselTrack && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    // Remove the CSS animation so rAF takes over
+    carouselTrack.style.animation = 'none';
+
+    var pos = 0;
+    var halfWidth = 0;
+    var speed = window.innerWidth <= 768 ? 0.4 : 0.55; // px per frame
+
+    function measureHalf() {
+      // Half of the full track = width of one set of logos
+      halfWidth = carouselTrack.scrollWidth / 2;
+    }
+
+    // Measure after images have had a chance to load
+    if (document.readyState === 'complete') {
+      measureHalf();
+    } else {
+      window.addEventListener('load', measureHalf);
+    }
+
+    function tick() {
+      if (halfWidth > 0) {
+        pos -= speed;
+        if (pos <= -halfWidth) pos += halfWidth;
+        carouselTrack.style.transform = 'translate3d(' + pos + 'px, 0, 0)';
+      }
+      requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  }
+
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {

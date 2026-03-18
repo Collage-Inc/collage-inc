@@ -480,6 +480,7 @@
 
 .prod-detail__text h3 {
   margin-bottom: 0.5rem;
+  line-height: 1.35;
 }
 
 .prod-detail__text p {
@@ -544,7 +545,7 @@
   }
 
   .prod-detail__text {
-    flex: 0 0 45%;
+    flex: 0 0 38%;
   }
 
   .prod-detail__visual {
@@ -696,14 +697,14 @@
 .prod-composed__accent--folder-card {
   width: 180px;
   bottom: calc(2% + 40px);
-  left: -6%;
+  left: calc(10% - 60px);
   z-index: 3;
 }
 
 .prod-composed__accent--select-action {
   width: 120px;
   bottom: calc(-2% + 40px);
-  left: 14%;
+  left: calc(32% - 60px);
   z-index: 4;
 }
 
@@ -802,7 +803,7 @@
 }
 
 .prod-composed__accent--custom-fields-dialog {
-  width: 376px;
+  width: 414px;
   bottom: calc(-8% + 60px);
   left: -10%;
   right: auto;
@@ -826,17 +827,17 @@
     margin-top: 1rem;
   }
 
-  /* Folders — centered, front down+right, accents down+right */
+  /* Folders — shifted right for visual separation from copy */
   .prod-section:nth-of-type(3) .prod-composed__back {
     width: 105%;
     right: auto;
-    left: -2%;
+    left: 6%;
   }
 
   .prod-section:nth-of-type(3) .prod-composed__front {
     width: 72%;
     right: auto;
-    left: 22%;
+    left: 30%;
     top: 28%;
   }
 
@@ -2166,6 +2167,7 @@
 
 /* Logo row */
 .prod-proof__logos {
+  margin-top: var(--space-xl);
   margin-bottom: 0;
 }
 
@@ -2207,7 +2209,7 @@
    PRODUCT CTA — clean, no gradient
    ============================================ */
 .prod-cta {
-  padding: 5rem 0;
+  padding: 9rem 0;
   text-align: center;
   background: linear-gradient(180deg, var(--color-lavender-pale) 0%, var(--color-lavender) 100%);
   border-radius: var(--radius-2xl);
@@ -2218,7 +2220,8 @@
 }
 
 .prod-cta h2 {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
   text-wrap: balance;
 }
 
