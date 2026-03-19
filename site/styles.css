@@ -125,6 +125,7 @@ body.page-organize {
   --accent: var(--color-purple);
   --accent-light: var(--color-purple-light);
   --accent-bg: rgba(139, 108, 246, 0.04);
+  --accent-rgb: 139, 108, 246;
 }
 body.page-discover {
   --accent: var(--color-amber);
@@ -142,6 +143,7 @@ body.page-manage {
   --accent: var(--color-coral);
   --accent-light: var(--color-blush);
   --accent-bg: rgba(255, 127, 80, 0.04);
+  --accent-rgb: 255, 127, 80;
 }
 /* Solutions pages */
 body.page-marketing {
@@ -360,7 +362,11 @@ p {
 .header__nav ul {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: 0;
+}
+
+.header__nav > ul > li {
+  padding: 0 calc(var(--space-lg) / 2);
 }
 
 .header__nav a {
@@ -2571,7 +2577,7 @@ p {
    ============================================ */
 .footer {
   background: var(--color-black);
-  padding: var(--space-3xl) 0 var(--space-lg);
+  padding: 5rem 0 var(--space-2xl);
   position: relative;
   overflow: hidden;
 }
@@ -2582,9 +2588,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: var(--space-3xl);
-  padding-bottom: var(--space-2xl);
+  padding-bottom: var(--space-3xl);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 .footer__brand {
