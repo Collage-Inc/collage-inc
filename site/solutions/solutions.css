@@ -65,6 +65,8 @@
   color: var(--color-gray-700);
   transition: border-color var(--duration) var(--ease);
   cursor: pointer;
+  max-width: 80%;
+  flex: 0 1 auto;
 }
 
 .sol-hero__blog-pill:hover {
@@ -81,6 +83,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.01em;
+  flex-shrink: 0;
 }
 
 .page-revenue .sol-hero__blog-pill__tag {
@@ -90,11 +93,16 @@
 
 .sol-hero__blog-pill__text {
   font-weight: 450;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 
 .sol-hero__blog-pill__arrow {
   color: var(--color-gray-400);
   font-size: 0.75rem;
+  flex-shrink: 0;
 }
 
 .sol-hero h1 {
@@ -783,7 +791,7 @@
 .integration-hub__icon--photoshop   { top: 30px;  right: -2px;  left: auto; }
 .integration-hub__icon--indesign    { top: 120px; right: -14px; left: auto; }
 .integration-hub__icon--illustrator { top: 215px; right: 10px; left: auto; }
-.integration-hub__icon--api         { top: 265px; left: 50%; margin-left: -23px; }
+.integration-hub__icon--api         { bottom: -10px; left: 50% !important; margin-left: -40px !important; top: auto !important; background: transparent !important; box-shadow: none !important; overflow: visible !important; width: auto !important; height: auto !important; }
 .integration-hub__icon--powerpoint  { top: 215px; left: 10px; }
 .integration-hub__icon--slides      { top: 120px; left: -14px; }
 .integration-hub__icon--canva       { top: 30px;  left: -2px; }
@@ -798,8 +806,39 @@
 }
 .integration-hub__icon--figma:hover,
 .integration-hub__icon--canva:hover,
-.integration-hub__icon--slides:hover {
+.integration-hub__icon--slides:hover,
+.integration-hub__icon--api:hover {
   box-shadow: none;
+}
+
+/* Creative & Design page — integration hub theming */
+.page-creative .integration-hub__center {
+  background: linear-gradient(135deg, #fff 0%, rgba(100, 115, 255, 0.08) 100%);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 0 50px rgba(100, 115, 255, 0.25);
+  animation: hub-pulse-primary 4s ease-in-out infinite;
+}
+
+.page-creative .integration-hub__glow {
+  background: radial-gradient(circle, rgba(100, 115, 255, 0.15) 0%, transparent 70%);
+}
+
+@keyframes hub-pulse-primary {
+  0%, 100% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 0 50px rgba(100, 115, 255, 0.25); }
+  50% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 0 70px rgba(100, 115, 255, 0.4); }
+}
+
+.page-creative .integration-hub__icon.integration-hub__icon--api {
+  bottom: -10px;
+  left: 50% !important;
+  margin-left: -40px !important;
+  top: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  width: auto !important;
+  height: auto !important;
 }
 
 /* Product UI mockups (shared patterns from homepage) */
@@ -1641,7 +1680,7 @@
   .integration-hub__icon--photoshop   { top: 32px;  right: 2px;  left: auto; }
   .integration-hub__icon--indesign    { top: 110px; right: -6px; left: auto; }
   .integration-hub__icon--illustrator { top: 186px; right: 20px; left: auto; }
-  .integration-hub__icon--api         { top: 224px; left: 50%; margin-left: -19px; }
+  .integration-hub__icon--api         { bottom: -8px !important; left: 50% !important; margin-left: -30px !important; top: auto !important; }
   .integration-hub__icon--powerpoint  { top: 186px; left: 20px; }
   .integration-hub__icon--slides      { top: 110px; left: -6px; }
   .integration-hub__icon--canva       { top: 32px;  left: 2px; }
@@ -1659,13 +1698,15 @@
     padding: 6px 4px;
   }
 
-  /* Logos — tighter on phone */
+  /* Logos — two rows on phone */
   .sol-proof__logos {
-    gap: var(--space-md);
+    gap: var(--space-lg) var(--space-xl);
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .sol-proof__logos img {
-    height: 24px;
+    height: 24px !important;
   }
 
   /* CTA — reduce padding */
