@@ -3128,6 +3128,7 @@ p {
 .breadcrumb ol {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0;
   list-style: none;
   padding: 0;
