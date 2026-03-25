@@ -3244,6 +3244,20 @@ p {
   justify-content: center;
 }
 
+/* Case study visual screenshots */
+.cs-win__img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.cs-win__visual:hover .cs-win__img {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
 /* Article body — typographic styles for long-form content */
 .article__body {
   padding-bottom: var(--space-3xl);
