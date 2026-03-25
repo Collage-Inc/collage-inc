@@ -6,6 +6,13 @@
 /* --- Page background --- */
 .page-contact {
   background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-contact main {
+  flex: 1;
 }
 
 /* ============================================
@@ -14,7 +21,7 @@
 .ct-hero {
   padding: calc(var(--header-height) + 7rem) 0 var(--space-4xl);
   position: relative;
-  background: linear-gradient(180deg, var(--color-white) 60%, var(--color-bg) 100%);
+  background: var(--color-white);
 }
 
 .ct-hero__split {
@@ -243,7 +250,7 @@ a.ct-channel__value:hover {
 /* ============================================
    RESPONSIVE
    ============================================ */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .ct-hero {
     padding: calc(var(--header-height) + 4rem) 0 var(--space-3xl);
   }

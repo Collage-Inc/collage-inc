@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Collage — Digital Asset Management for Growing Brands</title>
   <meta name="description" content="The essentials of digital asset management for growing brands. Organize, discover, and distribute your content from one place.">
   <meta name="robots" content="index, follow">
@@ -68,7 +68,7 @@
   <script>
   window.amplitude.add(window.sessionReplay.plugin({sampleRate:1}))
   .promise.then(function(){
-    window.amplitude.init('513a4cfbb24a873e6969c0087f87c0d8',{"autocapture":{"elementInteractions":true}});
+    window.amplitude.init('2d0d492d452dda54c07cef7a4506acb8',{"autocapture":{"elementInteractions":true}});
   });
   </script>
 </head>
@@ -344,13 +344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="deco-shape" data-speed="0.23" style="top: 50px; right: 18%; width: 110px; transform: rotate(-22deg);">
         <img src="assets/Risorsa 9c.svg" alt="" aria-hidden="true">
       </div>
-      <div class="deco-shape" data-speed="0.3" style="top: 180px; left: 12%; width: 65px; transform: rotate(55deg);">
-        <img src="assets/Risorsa 9c.svg" alt="" aria-hidden="true">
-      </div>
-      <div class="deco-shape" data-speed="0.25" style="top: 300px; right: 10%; width: 90px; transform: rotate(-38deg);">
-        <img src="assets/Risorsa 14c.svg" alt="" aria-hidden="true">
-      </div>
-      <div class="deco-shape" data-speed="0.18" style="top: 340px; left: 5%; width: 75px; transform: rotate(42deg);">
+      <div class="deco-shape" data-speed="0.18" style="top: 100px; left: 5%; width: 60px; transform: rotate(42deg);">
         <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
       </div>
       <div class="deco-shape" data-speed="0.33" style="top: 480px; left: 2%; width: 120px; transform: rotate(-45deg);">
@@ -358,12 +352,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="deco-shape" data-speed="0.25" style="top: 520px; right: 6%; width: 80px; transform: rotate(18deg);">
         <img src="assets/Risorsa 12c.svg" alt="" aria-hidden="true">
-      </div>
-      <div class="deco-shape" data-speed="0.22" style="top: 660px; left: 15%; width: 55px; transform: rotate(-15deg);">
-        <img src="assets/Risorsa 11c.svg" alt="" aria-hidden="true">
-      </div>
-      <div class="deco-shape" data-speed="0.28" style="top: 720px; right: 20%; width: 60px; transform: rotate(-30deg);">
-        <img src="assets/Risorsa 14c.svg" alt="" aria-hidden="true">
       </div>
 
       <div class="container">
@@ -384,7 +372,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="hero__image animate-in">
           <div class="hero__image-wrapper">
-            <img src="assets/screenshots/f3p-dashboard.png" alt="Collage dashboard showing organized digital assets" class="hero__screenshot-img">
+            <picture>
+              <source srcset="assets/screenshots/f3p-dashboard.webp" type="image/webp">
+              <img src="assets/screenshots/f3p-dashboard.png" alt="Collage dashboard showing organized digital assets" class="hero__screenshot-img">
+            </picture>
           </div>
         </div>
 
@@ -474,7 +465,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <h3>Organize</h3>
             <p>Structure your content library with folders, collages, tags, and custom metadata. Everything in its place.</p>
-            <a href="product/organize.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a href="product/organize.html" class="btn btn--ghost feature-card__link" aria-label="Learn more about Organize">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             <div class="feature-card__visual feature-visual--organize feature-visual--composed">
               <div class="organize-composed">
                 <img src="assets/product/f3p-add-to-collage.png" alt="Add to collage menu" class="organize-composed__layer organize-composed__layer--menu" loading="lazy">
@@ -493,7 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <h3>Discover</h3>
             <p>AI-powered search keeps your content at your fingertips. No more digging through folders. No more lost assets.</p>
-            <a href="product/discover.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a href="product/discover.html" class="btn btn--ghost feature-card__link" aria-label="Learn more about Discover">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             <div class="feature-card__visual feature-visual--video feature-visual--discover">
               <video autoplay loop muted playsinline>
                 <source src="assets/homepage-discover.mp4" type="video/mp4">
@@ -508,7 +499,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <h3>Distribute</h3>
             <p>Portals, share links, embeds, and integrations. Streamline your brand's workflows. Get your content where it needs to go.</p>
-            <a href="product/distribute.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a href="product/distribute.html" class="btn btn--ghost feature-card__link" aria-label="Learn more about Distribute">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             <div class="feature-card__visual feature-visual--video feature-visual--distribute">
               <video autoplay loop muted playsinline>
                 <source src="assets/homepage-distribute.mp4" type="video/mp4">
@@ -523,7 +514,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <h3>Manage</h3>
             <p>Version history, permissions, transformations, analytics, and more. Stay in control and stay confident as you scale your brand.</p>
-            <a href="product/manage.html" class="btn btn--ghost feature-card__link">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a href="product/manage.html" class="btn btn--ghost feature-card__link" aria-label="Learn more about Manage">Learn more <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             <div class="feature-card__visual feature-visual--manage feature-visual--composed">
               <div class="manage-composed">
                 <div class="manage-composed__panel manage-composed__panel--members">
@@ -572,13 +563,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <section class="distribution section" id="distribution">
       <!-- Decorative shapes — 3 shapes -->
-      <div class="deco-shape deco-shape--blush" data-speed="0.2" style="top: 15%; left: 3%; width: 70px; transform: rotate(3deg);">
+      <div class="deco-shape deco-shape--blush" data-speed="0.2" style="top: 2%; left: 25%; width: 52px; transform: rotate(3deg);">
         <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
       </div>
-      <div class="deco-shape deco-shape--lavender" data-speed="0.3" style="top: 55%; right: 3%; width: 65px; transform: rotate(-3deg);">
+      <div class="deco-shape deco-shape--lavender" data-speed="0.3" style="top: 3%; right: 20%; width: 52px; transform: rotate(-3deg);">
         <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
       </div>
-      <div class="deco-shape deco-shape--mint" data-speed="0.25" style="top: 80%; left: 5%; width: 55px; transform: rotate(2deg);">
+      <div class="deco-shape deco-shape--mint" data-speed="0.25" style="bottom: 3%; left: 30%; width: 55px; transform: rotate(2deg);">
         <img src="assets/Risorsa 13c.svg" alt="" aria-hidden="true">
       </div>
 
@@ -665,7 +656,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <h4>For Marketing</h4>
               <p>Eliminate asset requests, stay organized, and give your team back their time.</p>
-              <a href="solutions/marketing.html" class="btn btn--ghost use-case-card__link">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+              <a href="solutions/marketing.html" class="btn btn--ghost use-case-card__link" aria-label="Explore solution for Marketing">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             </div>
 
             <div class="use-case-card animate-in">
@@ -749,7 +740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <h4>For Creative & Design</h4>
               <p>Find the perfect asset and use it where you work — including inside Figma and Adobe.</p>
-              <a href="solutions/creative-design.html" class="btn btn--ghost use-case-card__link">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+              <a href="solutions/creative-design.html" class="btn btn--ghost use-case-card__link" aria-label="Explore solution for Creative and Design">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             </div>
 
             <div class="use-case-card animate-in">
@@ -784,7 +775,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               <h4>For Revenue</h4>
               <p>Give revenue teams instant, self-serve access — the latest and greatest content helps close deals.</p>
-              <a href="solutions/revenue.html" class="btn btn--ghost use-case-card__link">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+              <a href="solutions/revenue.html" class="btn btn--ghost use-case-card__link" aria-label="Explore solution for Revenue">Explore solution <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
             </div>
           </div>
         </div>
