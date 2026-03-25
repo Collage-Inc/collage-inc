@@ -281,7 +281,7 @@
 
     var pos = 0;
     var halfWidth = 0;
-    var speed = window.innerWidth <= 768 ? 0.4 : 0.55; // px per frame
+    var speed = window.innerWidth <= 768 ? 0.36 : 0.5; // px per frame
 
     function measureHalf() {
       // Half of the full track = width of one set of logos
