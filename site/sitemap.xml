@@ -151,5 +151,23 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Note: pricing-plans is excluded (noindex) -->
+  <url>
+    <loc>https://collage.inc/blog/collage-appoints-new-ceo</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://collage.inc/blog/reshaping-asset-management</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://collage.inc/blog/from-chaos-to-consistency</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Note: pricing-plans, privacy-policy, terms-of-service excluded (noindex) -->
 </urlset>

@@ -2387,7 +2387,7 @@
 }
 
 /* Per-feature tinted backgrounds */
-.prod-bento__card--organize { background: #E8E3F6; }
+.prod-bento__card--organize { background: #F5F2FC; }
 .prod-bento__card--discover { background: #FFFCF5; }
 .prod-bento__card--distribute { background: #F6FDF9; }
 .prod-bento__card--manage { background: #FFF8F5; }
@@ -2470,7 +2470,7 @@
 
 /* Featured card — elevated treatment */
 .prod-bento__card--featured {
-  border-color: var(--color-gray-100);
+  border-color: var(--color-gray-200);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
@@ -2583,12 +2583,26 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gray-100);
+  background: var(--color-white);
 }
 
 .organize-flow__graphic {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.06)) drop-shadow(0 8px 24px rgba(139, 108, 246, 0.08));
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+  .organize-flow {
+    overflow: visible;
+  }
+  .organize-flow__graphic {
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
 }
 
 /* --- Discover: Search UI + filter component collage --- */

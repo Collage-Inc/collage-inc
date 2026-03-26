@@ -17,6 +17,9 @@
 /blog/5-reasons-its-time-to-switch-dams                                             /blog/5-reasons-to-switch-dams                      301
 /blog/5-reasons-its-time-to-switch-dams/                                            /blog/5-reasons-to-switch-dams                      301
 
+/blog/5-signs-its-time-to-switch-your-dam-platform                                  /blog/5-reasons-to-switch-dams                      301
+/blog/5-signs-its-time-to-switch-your-dam-platform/                                 /blog/5-reasons-to-switch-dams                      301
+
 /blog/thinking-about-switching-dams-heres-what-top-marketing-teams-understand        /blog/thinking-about-switching-dams                 301
 /blog/thinking-about-switching-dams-heres-what-top-marketing-teams-understand/       /blog/thinking-about-switching-dams                 301
 
@@ -35,10 +38,19 @@
 /blog/10-reasons-it-might-be-time-to-adopt-a-dam                                    /blog/9-signs-to-adopt-a-dam                        301
 /blog/10-reasons-it-might-be-time-to-adopt-a-dam/                                   /blog/9-signs-to-adopt-a-dam                        301
 
+/blog/9-signs-its-time-for-your-team-to-adopt-a-dam                                 /blog/9-signs-to-adopt-a-dam                        301
+/blog/9-signs-its-time-for-your-team-to-adopt-a-dam/                                /blog/9-signs-to-adopt-a-dam                        301
+
 /blog/steve-baker-announcement                                                      /blog/steve-baker-joins-board                       301
 /blog/steve-baker-announcement/                                                     /blog/steve-baker-joins-board                       301
 
 # ─── Blog posts with same slug (trailing slash strip only) ────────────────────
+
+/blog/what-is-digital-asset-management                        /blog/what-is-dam                                           301
+/blog/what-is-digital-asset-management/                       /blog/what-is-dam                                           301
+
+/blog/brandfolder-vs-collage-a-side-by-side-comparison-for-growing-brands      /blog/brandfolder-vs-collage                        301
+/blog/brandfolder-vs-collage-a-side-by-side-comparison-for-growing-brands/     /blog/brandfolder-vs-collage                        301
 
 /blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials/    /blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials     301
 /blog/what-is-dam/                                          /blog/what-is-dam                                           301
