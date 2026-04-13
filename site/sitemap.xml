@@ -162,6 +162,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://collage.inc/blog/dam-built-backwards-audit</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
   <url>
     <loc>https://collage.inc/blog/from-chaos-to-consistency</loc>
