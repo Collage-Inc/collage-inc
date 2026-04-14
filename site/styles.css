@@ -764,13 +764,13 @@ p {
   border-radius: 100px;
   font-size: 0.8125rem;
   color: var(--color-gray-700);
-  transition: border-color var(--duration) var(--ease);
   cursor: pointer;
   max-width: 80%;
+  transition: border-color var(--duration) var(--ease);
 }
 
 .hero__blog-pill:hover {
-  border-color: var(--color-gray-400);
+  border-color: var(--color-primary);
 }
 
 .hero__blog-pill__tag {
@@ -3114,6 +3114,7 @@ p {
 /* Stagger animation delays for grid cards */
 .blog-grid .animate-in:nth-child(5) { transition-delay: 0.32s; }
 .blog-grid .animate-in:nth-child(6) { transition-delay: 0.4s; }
+.blog-grid .animate-in.is-visible { transition-delay: 0s; }
 
 /* ============================================
    BLOG POST / ARTICLE PAGE
