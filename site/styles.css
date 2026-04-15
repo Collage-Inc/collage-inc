@@ -3056,6 +3056,10 @@ p {
   display: block;
 }
 
+.blog-grid-card__image--left img {
+  object-position: left center;
+}
+
 .blog-grid-card__image-placeholder {
   width: 100%;
   aspect-ratio: 2 / 1;
