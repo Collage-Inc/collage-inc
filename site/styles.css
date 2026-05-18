@@ -2402,11 +2402,14 @@ p {
 }
 
 .blog-card__image {
+  aspect-ratio: 2 / 1;
   overflow: hidden;
 }
 
 .blog-card__image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -2528,8 +2531,8 @@ p {
 
   .blog-card--featured .blog-card__image img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
   }
 
   .blog-card--featured .blog-card__title {
@@ -2913,6 +2916,7 @@ p {
 }
 
 .blog-feature__image {
+  aspect-ratio: 2 / 1;
   overflow: hidden;
   border-radius: var(--radius-lg);
 }
@@ -3054,10 +3058,6 @@ p {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.blog-grid-card__image--left img {
-  object-position: left center;
 }
 
 .blog-grid-card__image-placeholder {
