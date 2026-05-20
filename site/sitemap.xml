@@ -167,6 +167,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://collage.inc/blog/dam-audit-before-migration</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
   <url>
     <loc>https://collage.inc/blog/from-chaos-to-consistency</loc>
