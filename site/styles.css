@@ -3314,6 +3314,11 @@ p {
   list-style: disc;
 }
 
+.article__body ul ul {
+  list-style: circle;
+  margin: 0.25rem 0 0.25rem;
+}
+
 .article__body ol {
   list-style: decimal;
 }
