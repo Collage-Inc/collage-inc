@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Loopy Cases — Customer Story | Collage</title>
-  <meta name="description" content="How Loopy Cases fully migrated from Box to Collage, building a photographer-first folder system with tag-driven discovery and a brand portal for every team.">
+  <meta name="description" content="How Loopy Cases consolidated its assets from Box and Brandfolder into Collage, building a photographer-first folder system with tag-driven discovery and a brand portal for every team.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://collage.inc/blog/loopy-cases">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Loopy Cases — Customer Story | Collage">
-  <meta property="og:description" content="How Loopy Cases fully migrated from Box to Collage, building a photographer-first folder system with tag-driven discovery and a brand portal for every team.">
+  <meta property="og:description" content="How Loopy Cases consolidated its assets from Box and Brandfolder into Collage, building a photographer-first folder system with tag-driven discovery and a brand portal for every team.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://collage.inc/blog/loopy-cases">
   <meta property="og:site_name" content="Collage">
-  <meta property="og:image" content="https://collage.inc/assets/og/blog.png">
+  <meta property="og:image" content="https://collage.inc/assets/og/loopy-cases.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Loopy Cases — Customer Story | Collage">
-  <meta name="twitter:description" content="How Loopy Cases fully migrated from Box to Collage, building a photographer-first folder system with tag-driven discovery and a brand portal for every team.">
-  <meta name="twitter:image" content="https://collage.inc/assets/og/blog.png">
+  <meta name="twitter:description" content="How Loopy Cases consolidated its assets from Box and Brandfolder into Collage, building a photographer-first folder system with tag-driven discovery and a brand portal for every team.">
+  <meta name="twitter:image" content="https://collage.inc/assets/og/loopy-cases.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,11 +28,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="../customers.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="customers.css">
+  <!-- Page accent override: Loopy Cases brand green -->
+  <style>
+    :root {
+      --accent: #15A24C;
+      --accent-light: #E4F7EC;
+      --accent-bg: rgba(52, 209, 121, 0.06);
+    }
+    .cs-hero__subtitle { display: flex; align-items: start; gap: 32px; }
+    .cs-hero__logo { flex-shrink: 0; width: 140px; margin-top: 4px; }
+    .cs-hero__byline { font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: var(--space-lg); }
+    /* Darken hero meta labels for AA contrast (default gray-400 is too light) */
+    .cs-hero__meta-label { color: var(--color-gray-600); }
+    @media (max-width: 640px) {
+      .cs-hero__subtitle { flex-direction: column; gap: 20px; }
+      .cs-hero__logo { width: 100px; }
+    }
+  </style>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../../assets/Icon.svg">
+  <link rel="icon" type="image/svg+xml" href="../assets/Icon.svg">
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -62,8 +79,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        ======================================== -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a href="../../index.html" class="header__logo" aria-label="Collage home">
-        <img src="../../assets/Logo.svg" alt="Collage" width="1600" height="332">
+      <a href="../index.html" class="header__logo" aria-label="Collage home">
+        <img src="../assets/Logo.svg" alt="Collage" width="1600" height="332">
       </a>
 
       <div class="header__right">
@@ -77,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="header__dropdown">
                 <div class="header__dropdown-col header__dropdown-col--nav">
                   <div class="header__dropdown-label">Product</div>
-                  <a href="../../product/overview.html" class="header__dropdown-item">
+                  <a href="../product/overview.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--brand-blue">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6473FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5"/><path d="M19 13v6a1 1 0 01-1 1H6a1 1 0 01-1-1v-6"/></svg>
                     </div>
@@ -86,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <span class="header__dropdown-desc">Everything Collage can do</span>
                     </div>
                   </a>
-                  <a href="../../product/organize.html" class="header__dropdown-item">
+                  <a href="../product/organize.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--purple">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 2h9a2 2 0 012 2z"/></svg>
                     </div>
@@ -95,7 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <span class="header__dropdown-desc">Folders, tags, and custom fields</span>
                     </div>
                   </a>
-                  <a href="../../product/discover.html" class="header__dropdown-item">
+                  <a href="../product/discover.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--amber">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
                     </div>
@@ -104,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <span class="header__dropdown-desc">AI search and smart filters</span>
                     </div>
                   </a>
-                  <a href="../../product/distribute.html" class="header__dropdown-item">
+                  <a href="../product/distribute.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--emerald">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.7914 12.6073C21.0355 12.398 21.1575 12.2934 21.2023 12.1689C21.2415 12.0597 21.2415 11.9401 21.2023 11.8309C21.1575 11.7064 21.0355 11.6017 20.7914 11.3925L12.3206 4.1319C11.9004 3.7717 11.6903 3.5916 11.5124 3.58719C11.3578 3.58336 11.2101 3.65128 11.1124 3.77116C11 3.90909 11 4.18583 11 4.7393V9.03456C8.86532 9.40801 6.91159 10.4896 5.45971 12.1138C3.87682 13.8844 3.00123 16.1758 3 18.5509V19.1628C4.04934 17.8988 5.35951 16.8764 6.84076 16.1658C8.1467 15.5393 9.55842 15.1682 11 15.0704V19.2605C11 19.814 11 20.0907 11.1124 20.2287C11.2101 20.3485 11.3578 20.4165 11.5124 20.4126C11.6903 20.4082 11.9004 20.2281 12.3206 19.8679L20.7914 12.6073Z" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
@@ -113,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <span class="header__dropdown-desc">Portals, links, and embeds</span>
                     </div>
                   </a>
-                  <a href="../../product/manage.html" class="header__dropdown-item">
+                  <a href="../product/manage.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--coral">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF7F50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
                     </div>
@@ -126,17 +143,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="header__dropdown-col header__dropdown-col--featured">
                   <div class="header__dropdown-label">Featured</div>
                   
-                  <a href="../../blog/content-permissions.html" class="header__dropdown-feature">
+                  <a href="../blog/content-permissions.html" class="header__dropdown-feature">
                     <span class="header__dropdown-feature-tag">Product</span>
                     <span class="header__dropdown-feature-title">Simplify collaboration with content permissions</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
                   </a>
-                  <a href="../../blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials.html" class="header__dropdown-feature">
+                  <a href="../blog/cloud-storage-vs-enterprise-dam-vs-dam-essentials.html" class="header__dropdown-feature">
                     <span class="header__dropdown-feature-tag">Guide</span>
                     <span class="header__dropdown-feature-title">Cloud storage vs enterprise DAM vs essentials</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
                   </a>
-                  <a href="../../blog/folders-collages-portals.html" class="header__dropdown-feature">
+                  <a href="../blog/folders-collages-portals.html" class="header__dropdown-feature">
                     <span class="header__dropdown-feature-tag">Distribution</span>
                     <span class="header__dropdown-feature-title">Folders, Collages, Portals — what's the difference?</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
@@ -153,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="header__dropdown">
                 <div class="header__dropdown-col header__dropdown-col--nav">
                   <div class="header__dropdown-label">Solutions</div>
-                  <a href="../../solutions/marketing.html" class="header__dropdown-item">
+                  <a href="../solutions/marketing.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--coral">
                       <svg width="16" height="16" viewBox="-1 0 26 28" fill="none" stroke="#FF7F50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.47 26C9.41 26.83 10.65 27.33 12 27.33C13.35 27.33 14.59 26.83 15.53 26M20 8.67C20 6.54 19.16 4.51 17.66 3.01C16.16 1.51 14.12 0.67 12 0.67C9.88 0.67 7.84 1.51 6.34 3.01C4.84 4.51 4 6.54 4 8.67C4 12.79 2.96 15.61 1.8 17.47C0.82 19.05 0.33 19.84 0.35 20.05C0.37 20.3 0.42 20.39 0.62 20.54C0.79 20.67 1.59 20.67 3.19 20.67H20.81C22.41 20.67 23.21 20.67 23.38 20.54C23.58 20.39 23.63 20.3 23.65 20.05C23.67 19.84 23.18 19.05 22.2 17.47C21.04 15.61 20 12.79 20 8.67Z"/></svg>
                     </div>
@@ -162,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <span class="header__dropdown-desc">Eliminate asset requests and content sprawl</span>
                     </div>
                   </a>
-                  <a href="../../solutions/creative-design.html" class="header__dropdown-item">
+                  <a href="../solutions/creative-design.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--blue">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6473FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10L14 6M2.5 21.5L5.884 21.124C6.298 21.078 6.505 21.055 6.698 20.993C6.869 20.937 7.032 20.859 7.183 20.76C7.352 20.648 7.5 20.501 7.794 20.206L21 7C22.105 5.895 22.105 4.105 21 3C19.895 1.895 18.105 1.895 17 3L3.794 16.206C3.5 16.501 3.352 16.648 3.241 16.817C3.141 16.968 3.063 17.131 3.008 17.302C2.945 17.496 2.922 17.702 2.876 18.116L2.5 21.5Z"/></svg>
                     </div>
@@ -171,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <span class="header__dropdown-desc">Find assets and use them where you work</span>
                     </div>
                   </a>
-                  <a href="../../solutions/revenue.html" class="header__dropdown-item">
+                  <a href="../solutions/revenue.html" class="header__dropdown-item">
                     <div class="header__dropdown-icon header__dropdown-icon--teal">
                       <svg width="16" height="16" viewBox="-1 -1 26 26" fill="none" stroke="#40E0D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.333H2.133C1.387 5.333 1.013 5.333 0.728 5.479C0.477 5.607 0.273 5.811 0.145 6.061C0 6.347 0 6.72 0 7.467V21.867C0 22.613 0 22.987 0.145 23.272C0.273 23.523 0.477 23.727 0.728 23.855C1.013 24 1.387 24 2.133 24H8M8 24H16M8 24V2.133C8 1.387 8 1.013 8.145 0.728C8.273 0.477 8.477 0.273 8.728 0.145C9.013 0 9.387 0 10.133 0H13.867C14.613 0 14.987 0 15.272 0.145C15.523 0.273 15.727 0.477 15.855 0.728C16 1.013 16 1.387 16 2.133V24M16 24H21.867C22.613 24 22.987 24 23.272 23.855C23.523 23.727 23.727 23.523 23.855 23.272C24 22.987 24 22.613 24 21.867V12.8C24 12.053 24 11.68 23.855 11.395C23.727 11.144 23.523 10.94 23.272 10.812C22.987 10.667 22.613 10.667 21.867 10.667H16"/></svg>
                     </div>
@@ -184,19 +201,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="header__dropdown-col header__dropdown-col--featured">
                   <div class="header__dropdown-label">Featured</div>
                   
-                  <a href="../../blog/the-2200-ratio.html" class="header__dropdown-feature">
+                  <a href="../blog/the-2200-ratio.html" class="header__dropdown-feature">
                     <span class="header__dropdown-feature-tag">Distribution</span>
                     <span class="header__dropdown-feature-title">The 2:200 Ratio: Why external users scale your brand</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
                   </a>
-                  <a href="../../blog/brand-portals.html" class="header__dropdown-feature">
+                  <a href="../blog/brand-portals.html" class="header__dropdown-feature">
                     <span class="header__dropdown-feature-tag">Distribution</span>
                     <span class="header__dropdown-feature-title">Brand portals: effortless content distribution</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
                   </a>
-                  <a href="../../blog/how-e4-replaced-3-tools-with-collage.html" class="header__dropdown-feature">
+                  <a href="../blog/loopy-cases.html" class="header__dropdown-feature">
                     <span class="header__dropdown-feature-tag">Customer Story</span>
-                    <span class="header__dropdown-feature-title">How E4 replaced 3 tools with Collage</span>
+                    <span class="header__dropdown-feature-title">How Loopy Cases consolidated every asset into one platform</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
                   </a>
                 
@@ -232,28 +249,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="header__dropdown-col header__dropdown-col--featured">
                   <div class="header__dropdown-label">Featured</div>
-                  <a href="how-growing-brands-manage-content-at-scale.html" class="header__dropdown-feature">
-                    <span class="header__dropdown-feature-tag">Guide</span>
-                    <span class="header__dropdown-feature-title">From Chaos to Consistency: How Growing Brands Keep Their Marketing on Point</span>
+                  <a href="../blog/brandfolder-vs-collage.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Comparison</span>
+                    <span class="header__dropdown-feature-title">Brandfolder vs Collage: which DAM is right?</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
                   </a>
-                  <a href="brandfolder-vs-collage.html" class="header__dropdown-feature">
-                    <span class="header__dropdown-feature-tag">New</span>
-                    <span class="header__dropdown-feature-title">Brandfolder vs Collage: Which DAM Is Right for Your Team?</span>
+                  <a href="../blog/how-growing-brands-manage-content-at-scale.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Guide</span>
+                    <span class="header__dropdown-feature-title">How growing brands keep their marketing on point</span>
+                    <span class="header__dropdown-feature-arrow">&rarr;</span>
+                  </a>
+                  <a href="../blog/5-reasons-to-switch-dams.html" class="header__dropdown-feature">
+                    <span class="header__dropdown-feature-tag">Guide</span>
+                    <span class="header__dropdown-feature-title">5 signs it's time to switch your DAM platform</span>
                     <span class="header__dropdown-feature-arrow">&rarr;</span>
                   </a>
                 </div>
               </div>
             </li>
-            <li><a href="../../about.html">Company</a></li>
-            <li><a href="../../pricing.html">Pricing</a></li>
-            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../about.html">Company</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+            <li><a href="../contact.html">Contact</a></li>
           </ul>
         </nav>
         <div class="header__divider"></div>
         <div class="header__actions">
           <a href="https://app.collage.inc/" class="header__signin">Sign in</a>
-          <a href="../../contact.html" class="btn btn--primary">Book a demo</a>
+          <a href="../contact.html" class="btn btn--primary">Book a demo</a>
         </div>
       </div>
 
@@ -271,35 +293,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li class="mobile-menu__dropdown">
         <button class="mobile-menu__toggle">Product <svg class="mobile-menu__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5l3 3 3-3"/></svg></button>
         <ul class="mobile-menu__sub">
-          <li><a href="../../product/overview.html">Overview</a></li>
-          <li><a href="../../product/organize.html">Organize</a></li>
-          <li><a href="../../product/discover.html">Discover</a></li>
-          <li><a href="../../product/distribute.html">Distribute</a></li>
-          <li><a href="../../product/manage.html">Manage</a></li>
+          <li><a href="../product/overview.html">Overview</a></li>
+          <li><a href="../product/organize.html">Organize</a></li>
+          <li><a href="../product/discover.html">Discover</a></li>
+          <li><a href="../product/distribute.html">Distribute</a></li>
+          <li><a href="../product/manage.html">Manage</a></li>
         </ul>
       </li>
       <li class="mobile-menu__dropdown">
         <button class="mobile-menu__toggle">Solutions <svg class="mobile-menu__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5l3 3 3-3"/></svg></button>
         <ul class="mobile-menu__sub">
-          <li><a href="../../solutions/marketing.html">Marketing</a></li>
-          <li><a href="../../solutions/creative-design.html">Creative &amp; Design</a></li>
-          <li><a href="../../solutions/revenue.html">Revenue</a></li>
+          <li><a href="../solutions/marketing.html">Marketing</a></li>
+          <li><a href="../solutions/creative-design.html">Creative &amp; Design</a></li>
+          <li><a href="../solutions/revenue.html">Revenue</a></li>
         </ul>
       </li>
       <li class="mobile-menu__dropdown">
         <button class="mobile-menu__toggle">Resources <svg class="mobile-menu__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4.5l3 3 3-3"/></svg></button>
         <ul class="mobile-menu__sub">
-          <li><a href="../../blog/index.html">Blog</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
           <li><a href="https://collageinc.freshdesk.com/support/home">Help Center</a></li>
         </ul>
       </li>
-      <li><a href="../../about.html">Company</a></li>
-      <li><a href="../../pricing.html">Pricing</a></li>
-      <li><a href="../../contact.html">Contact</a></li>
+      <li><a href="../about.html">Company</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../contact.html">Contact</a></li>
     </ul>
     <div class="mobile-menu__actions">
       <a href="https://app.collage.inc/" class="btn btn--secondary">Sign in</a>
-      <a href="../../contact.html" class="btn btn--primary">Book a demo</a>
+      <a href="../contact.html" class="btn btn--primary">Book a demo</a>
     </div>
   </div>
 
@@ -310,13 +332,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          ======================================== -->
     <section class="cs-hero">
       <div class="deco-shape" data-speed="0.06" style="top: 100px; left: -80px; width: 200px; transform: rotate(-15deg);">
-        <img src="../../assets/Risorsa 14c.svg" alt="" aria-hidden="true">
+        <img src="../assets/Risorsa 14c.svg" alt="" aria-hidden="true">
       </div>
       <div class="deco-shape" data-speed="-0.045" style="top: 160px; right: -60px; width: 160px; transform: rotate(10deg);">
-        <img src="../../assets/Risorsa 12c.svg" alt="" aria-hidden="true">
+        <img src="../assets/Risorsa 12c.svg" alt="" aria-hidden="true">
       </div>
       <div class="deco-shape" data-speed="0.035" style="top: 380px; left: 8%; width: 80px; transform: rotate(25deg);">
-        <img src="../../assets/Risorsa 13c.svg" alt="" aria-hidden="true">
+        <img src="../assets/Risorsa 13c.svg" alt="" aria-hidden="true">
       </div>
 
       <div class="container">
@@ -326,7 +348,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             Customer Story
           </div>
           <h1>How Loopy Cases consolidated every asset into one platform</h1>
-          <p class="cs-hero__subtitle">A phone accessory brand fully migrated from Box to Collage, building a photographer-first folder system with tag-driven discovery and a brand portal that serves every team.</p>
+          <p class="cs-hero__byline"><time datetime="2026-06-18">June 18, 2026</time></p>
+          <p class="cs-hero__subtitle">
+            <span>A phone accessory brand consolidated its assets from Box and Brandfolder into Collage, building a photographer-first folder system with tag-driven discovery and a brand portal that serves every team.</span>
+            <img src="../assets/blog/loopy-logo.png" alt="Loopy Cases" class="cs-hero__logo">
+          </p>
 
           <div class="cs-hero__meta">
             <div class="cs-hero__meta-item">
@@ -339,7 +365,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="cs-hero__meta-item">
               <span class="cs-hero__meta-label">Team Size</span>
-              <span class="cs-hero__meta-value">2 primary users</span>
+              <span class="cs-hero__meta-value">2 primary users, 8 creative partners, 50+ external users</span>
             </div>
             <div class="cs-hero__meta-item">
               <span class="cs-hero__meta-label">Use Case</span>
@@ -359,14 +385,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cs-overview__col animate-in">
             <div class="cs-overview__col-label">The Customer</div>
             <h2>A creative lead managing high-volume product photography</h2>
-            <p>Loopy Cases is a phone accessory brand known for its signature loop grip. Jamie Ross leads the creative asset workflow, coordinating photography from multiple external photographers and an in-house photographer, Mariah, who also handles all tagging and bulk uploads.</p>
-            <p>From product launches and campaign shoots to Photoshop mockups showing cases on every phone color, the team produces a constant stream of visual content that needs to reach graphic designers, marketing, and the founders.</p>
+            <p>Loopy Cases is a phone accessory brand known for its signature loop grip. Jamie leads the creative asset workflow, coordinating photography from multiple external photographers while team member Mariah handles all uploads and tagging for the brand.</p>
+            <p>From product launches and campaign shoots to Photoshop mockups showing cases on every phone color, the team produces a constant stream of visual content that needs to reach graphic designers, marketers, external partners, and the Loopy founders.</p>
           </div>
           <div class="cs-overview__col animate-in">
             <div class="cs-overview__col-label">The Challenge</div>
             <h2>Migrating from Box without losing structure</h2>
-            <p>Before Collage, Loopy Cases managed all assets in Box using a deeply nested folder structure organized by photographer and shoot number. When they migrated, every photographer's carefully separated folders were dumped into a single location — losing the hierarchy the team depended on.</p>
-            <p>On top of the migration challenge, sharing assets meant juggling Box permissions across departments. Graphic designers, marketing, influencer relations, quality assurance, and even external charity partners all needed access to different slices of the library — but giving everyone full access created confusion and risk.</p>
+            <p>Before Collage, Loopy Cases had its assets split across Box and Brandfolder, with the bulk managed in a deeply nested Box folder structure organized by photographer and shoot number. When they migrated, every photographer's carefully separated folders were dumped into a single location, causing them to lose the hierarchy the team depended on.</p>
+            <p>On top of the migration challenge, sharing assets meant juggling Box permissions across departments. Graphic designers, marketing, influencer relations, quality assurance, and even external charity partners all needed access to different slices of the library. Giving everyone full access was too risky for the team and too confusing for non-power users.</p>
           </div>
         </div>
       </div>
@@ -383,41 +409,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cs-win__text">
             <span class="cs-win__number">1</span>
             <h3>A photographer-first folder system that keeps every shoot organized</h3>
-            <p>Jamie rebuilt the team's asset structure inside Collage using folders organized by photographer, then by numbered shoot. Kiana's 55th shoot gets its own folder. Mariah's in-house work is organized the same way. From each folder, selected images are shared into campaign-specific collages for marketing.</p>
-            <p>This hybrid approach gives the team the deep structure they need for managing thousands of images, while collages serve as curated sets for each launch — final photos, ads, working files, and giveaway content, all in one place.</p>
+            <p>Jamie rebuilt the team's asset structure inside Collage using folders organized by photographer, then by numbered shoot. Qiana's 55th shoot gets its own folder. Mariah's in-house work is organized the same way. From each folder, selected images are curated and shared via collages to support how the marketing team executes campaigns.</p>
+            <p>This hybrid approach gives the team the structure they need for managing thousands of images, while collages serve as curated sets for each launch. Final photos, ads, working files, and giveaway content all live in one place.</p>
             <div class="cs-win__quote">
-              <blockquote>"I know you guys hate folders, but we use folders a lot. We have a lot of stuff that doesn't necessarily need a collage — the collage part of it is for product grouping."</blockquote>
+              <blockquote>"We use folders a lot. They're clear and structured which supports how we operate. We have a lot of stuff that doesn't necessarily need a collage, but they become very useful for grouping and preparing for launches."</blockquote>
             </div>
           </div>
           <div class="cs-win__visual">
-            <div class="product-ui">
-              <div class="product-ui__toolbar">
-                <div class="product-ui__breadcrumb">
-                  <span class="crumb">Photographers</span>
-                  <span class="crumb-sep">/</span>
-                  <span class="crumb">Kiana</span>
-                  <span class="crumb-sep">/</span>
-                  <span class="crumb active">Shoot 55</span>
-                </div>
-                <div class="product-ui__actions">
-                  <span class="ui-btn"></span>
-                  <span class="ui-btn primary"></span>
-                </div>
-              </div>
-              <div class="product-ui__results-grid">
-                <span class="result-thumb" style="background: var(--color-lavender-pale);"></span>
-                <span class="result-thumb" style="background: var(--color-mint);"></span>
-                <span class="result-thumb" style="background: var(--color-teal); opacity: 0.5;"></span>
-                <span class="result-thumb" style="background: var(--color-lavender); opacity: 0.6;"></span>
-                <span class="result-thumb" style="background: var(--color-mint); opacity: 0.7;"></span>
-                <span class="result-thumb" style="background: var(--color-lavender-pale); opacity: 0.5;"></span>
-              </div>
-              <div class="product-ui__tags">
-                <span class="tag" style="background: var(--color-lavender-pale); color: var(--color-primary);">Barry Stripes</span>
-                <span class="tag" style="background: rgba(64, 224, 208, 0.12); color: #2db3a5;">Multi-Grasp</span>
-                <span class="tag" style="background: var(--color-blush); color: var(--color-coral);">Pocket Shot</span>
-              </div>
-            </div>
+            <img src="../assets/blog/loopy-photographer-folders.png" alt="Collage folder view organized by photographer — Aubrey's '36 October 2025 Pebbles' shoot folder showing a grid of product photos" class="cs-win__img">
           </div>
         </div>
 
@@ -429,34 +428,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Mariah manages all tagging for the library — product names, loop combos, seasonal themes like Valentine's Day, use cases like multi-grasp and pocket shots, and even specific elements in photos like jewelry, balloons, or sweaters.</p>
             <p>The result is a system where anyone on the team can combine tags to find exactly what they need. Search "Barry Stripes" plus "multi-grasp" and the right images appear instantly — no folder-diving required.</p>
             <div class="cs-win__quote">
-              <blockquote>"As long as we're keeping up with our tags, we find it very, very easy to find what we're looking for."</blockquote>
+              <blockquote>"We find it very, very easy to find what we're looking for."</blockquote>
             </div>
           </div>
           <div class="cs-win__visual">
-            <div class="product-ui">
-              <div class="product-ui__search-input">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B4B4B4" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                <span class="search-text">barry stripes + multi-grasp</span>
-              </div>
-              <div class="product-ui__filters">
-                <span class="filter-chip active">Assets</span>
-                <span class="filter-chip">Folders</span>
-                <span class="filter-chip">Collages</span>
-              </div>
-              <div class="product-ui__results-grid">
-                <span class="result-thumb" style="background: var(--color-lavender-pale);"></span>
-                <span class="result-thumb" style="background: var(--color-primary); opacity: 0.3;"></span>
-                <span class="result-thumb" style="background: var(--color-lavender); opacity: 0.5;"></span>
-                <span class="result-thumb" style="background: var(--color-lavender-pale); opacity: 0.7;"></span>
-                <span class="result-thumb" style="background: var(--color-primary); opacity: 0.2;"></span>
-                <span class="result-thumb" style="background: var(--color-lavender); opacity: 0.4;"></span>
-              </div>
-              <div class="product-ui__tags">
-                <span class="tag" style="background: var(--color-lavender-pale); color: var(--color-primary);">Barry Stripes</span>
-                <span class="tag" style="background: rgba(64, 224, 208, 0.12); color: #2db3a5;">Multi-Grasp</span>
-                <span class="tag" style="background: #FEF3C7; color: #D97706;">Posh Pink</span>
-              </div>
-            </div>
+            <img src="../assets/blog/loopy-tag-search.png" alt="Collage search filtered by the 'Berry Stripes' tag with a tag dropdown showing Super-Loop options, returning matching product photos" class="cs-win__img">
           </div>
         </div>
 
@@ -472,38 +448,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
           <div class="cs-win__visual">
-            <div class="collage-grid-ui">
-              <div class="collage-grid-ui__header">
-                <span class="collage-grid-ui__title">Brand Portal</span>
-                <span class="collage-grid-ui__count">6 folders</span>
-              </div>
-              <div class="collage-grid-ui__grid">
-                <div class="collage-grid-ui__item">
-                  <div class="collage-grid-ui__thumb" style="background: linear-gradient(135deg, var(--color-blush), var(--color-coral));"></div>
-                  <span class="collage-grid-ui__label">Production</span>
-                </div>
-                <div class="collage-grid-ui__item">
-                  <div class="collage-grid-ui__thumb" style="background: linear-gradient(135deg, var(--color-lavender-pale), var(--color-primary));"></div>
-                  <span class="collage-grid-ui__label">Design Team</span>
-                </div>
-                <div class="collage-grid-ui__item">
-                  <div class="collage-grid-ui__thumb" style="background: linear-gradient(135deg, var(--color-mint), var(--color-teal));"></div>
-                  <span class="collage-grid-ui__label">Influencer Relations</span>
-                </div>
-                <div class="collage-grid-ui__item">
-                  <div class="collage-grid-ui__thumb" style="background: linear-gradient(135deg, #FEF3C7, #F59E0B); opacity: 0.7;"></div>
-                  <span class="collage-grid-ui__label">Customer Service</span>
-                </div>
-                <div class="collage-grid-ui__item">
-                  <div class="collage-grid-ui__thumb" style="background: linear-gradient(135deg, var(--color-gray-100), var(--color-gray-300));"></div>
-                  <span class="collage-grid-ui__label">Quality Assurance</span>
-                </div>
-                <div class="collage-grid-ui__item">
-                  <div class="collage-grid-ui__thumb" style="background: linear-gradient(135deg, var(--color-lavender), var(--color-pink)); opacity: 0.7;"></div>
-                  <span class="collage-grid-ui__label">Company Logos</span>
-                </div>
-              </div>
-            </div>
+            <img src="../assets/blog/loopy-brand-portal.png" alt="The branded Loopy Cases portal with collage tiles for Loopy Logos, Branding Guidelines, Iconography, evergreen assets, and product lines like Hero Loop Combos" class="cs-win__img">
           </div>
         </div>
 
@@ -512,42 +457,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cs-win__text">
             <span class="cs-win__number">4</span>
             <h3>A complete migration from Box — no backup plan, no going back</h3>
-            <p>Jamie didn't just add Collage to the tool stack — she replaced Box entirely. After migrating all assets, she emptied Box completely so the founders had no choice but to adopt the new system. A "pre-collage" staging folder held legacy content that gets organized as time allows.</p>
-            <p>The result: zero confusion about where files live. Edited working files go in folders, final approved images go in collages. No Box, no Dropbox, no duplicate storage. Just Collage.</p>
+            <p>Jamie replaced Box entirely rather than adding another tool alongside it. After migrating all assets, she emptied Box completely so that others had no choice but to adopt the new system. A "pre-collage" staging folder holds legacy content that gets organized as time allows.</p>
+            <p>The result: zero confusion about where files live. Edited working files go in folders, final approved images go in collages. No Box, no Brandfolder, no duplicate storage. Just Collage.</p>
             <div class="cs-win__quote">
-              <blockquote>"We literally left Box empty. So then they couldn't — the founders had nothing to go to. We forced it upon them and it worked."</blockquote>
+              <blockquote>"We literally left Box empty. So then they had nothing to go to. We forced it upon them and it worked."</blockquote>
             </div>
           </div>
-          <div class="cs-win__visual" style="justify-content: center; padding: 24px;">
-            <div class="product-ui">
-              <div class="product-ui__share-dialog">
-                <div class="share-dialog__header">
-                  <span class="share-dialog__title">Asset locations</span>
-                </div>
-                <div class="share-dialog__people">
-                  <div class="share-dialog__person">
-                    <div class="share-dialog__avatar" style="background: var(--color-primary);"></div>
-                    <span class="share-dialog__name">Edited & working files</span>
-                    <span class="share-dialog__role">Folders</span>
-                  </div>
-                  <div class="share-dialog__person">
-                    <div class="share-dialog__avatar" style="background: var(--color-coral);"></div>
-                    <span class="share-dialog__name">Final approved images</span>
-                    <span class="share-dialog__role">Collages</span>
-                  </div>
-                  <div class="share-dialog__person">
-                    <div class="share-dialog__avatar" style="background: var(--color-teal);"></div>
-                    <span class="share-dialog__name">Department assets</span>
-                    <span class="share-dialog__role">Brand Portal</span>
-                  </div>
-                  <div class="share-dialog__person">
-                    <div class="share-dialog__avatar" style="background: var(--color-gray-300);"></div>
-                    <span class="share-dialog__name">Box</span>
-                    <span class="share-dialog__role" style="text-decoration: line-through;">Retired</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="cs-win__visual">
+            <img src="../assets/blog/loopy-collage.png" alt="A curated Collage named 'Kickoff to Summer Campaign' holding final approved product images ready to deliver" class="cs-win__img">
           </div>
         </div>
 
@@ -562,7 +479,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cs-pullquote__inner animate-in">
           <blockquote>"It's less confusion as far as what is where. Edited files are going to be in a folder. If it's just an image that we know is final, you can use it for whatever — it's in a collage. It just makes it so easy to deliver to whatever team we need to deliver it to."</blockquote>
           <div class="cs-pullquote__author">
-            <strong>Jamie Ross</strong>, Loopy Cases
+            <strong>Jamie Kensinger</strong>, Creative Manager
           </div>
         </div>
       </div>
@@ -584,7 +501,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6473FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 2h9a2 2 0 012 2z"/></svg>
             </div>
             <h4>Single source of truth</h4>
-            <p>No Box, no Dropbox — every asset from every photographer lives in one platform</p>
+            <p>No Box, no Brandfolder — every asset from every photographer lives in one platform</p>
           </div>
 
           <div class="cs-result-card animate-in">
@@ -619,20 +536,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 class="related-posts__heading animate-in">Related Posts</h2>
         <div class="related-posts__grid stagger-children">
 
-      <a href="parker-baby.html" class="blog-grid-card animate-in">
+      <a href="how-e4-replaced-3-tools-with-collage.html" class="blog-grid-card animate-in">
         <div class="blog-grid-card__link">
           <div class="blog-grid-card__image">
-            <div class="blog-grid-card__image-placeholder" style="background: linear-gradient(135deg, var(--color-mint) 0%, var(--color-teal) 100%);">
-              <img src="../../assets/Risorsa 12c.svg" alt="" style="width: 60px; opacity: 0.3;">
-            </div>
+            <img src="../assets/blog/how-e4-replaced-3-tools-with-collage.jpg" alt="How E4 Arms Hundreds of Advisors with a Self-Serve Content Portal">
           </div>
           <div class="blog-grid-card__body">
             <div class="blog-grid-card__meta">
               <span class="blog-grid-card__tag">Customer Story</span>
-              <time datetime="2026-01-15">Jan 15, 2026</time>
+              <time datetime="2026-03-10">Mar 10, 2026</time>
             </div>
-            <h3 class="blog-grid-card__title">How Parker Baby Co Replaced Folder-Digging with Tag-Based Discovery</h3>
-            <p class="blog-grid-card__excerpt">From seasonal campaigns to daily content distribution — how a fast-growing baby brand streamlined their asset workflow.</p>
+            <h3 class="blog-grid-card__title">How E4 arms hundreds of advisors with a self-serve content portal</h3>
+            <p class="blog-grid-card__excerpt">A two-person marketing team replaced Brandfolder and SharePoint chaos with a color-coded, collage-based library.</p>
           </div>
         </div>
       </a>
@@ -640,7 +555,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="brand-portals.html" class="blog-grid-card animate-in">
         <div class="blog-grid-card__link">
           <div class="blog-grid-card__image">
-            <img src="../../assets/blog/brand-portals.jpg" alt="Brand Portals">
+            <img src="../assets/blog/brand-portals.jpg" alt="Brand Portals">
           </div>
           <div class="blog-grid-card__body">
             <div class="blog-grid-card__meta">
@@ -656,7 +571,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="how-growing-brands-manage-content-at-scale.html" class="blog-grid-card animate-in">
         <div class="blog-grid-card__link">
           <div class="blog-grid-card__image">
-            <img src="../../assets/blog/how-growing-brands-manage-content-at-scale.jpg" alt="How Growing Brands Manage Content at Scale">
+            <img src="../assets/blog/how-growing-brands-manage-content-at-scale.jpg" alt="How Growing Brands Manage Content at Scale">
           </div>
           <div class="blog-grid-card__body">
             <div class="blog-grid-card__meta">
@@ -680,7 +595,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
         <div class="animate-in">
           <h2>Get more value<br>from your content.</h2>
-          <a href="../../contact.html" class="btn btn--primary btn--large">Book a demo</a>
+          <a href="../contact.html" class="btn btn--primary btn--large">Book a demo</a>
         </div>
       </div>
     </section>
@@ -691,58 +606,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        FOOTER
        ======================================== -->
   <footer class="footer">
-    <img src="../../assets/Risorsa 9c.svg" alt="" class="deco-shape" style="top: 8%; left: 3%; width: 90px; transform: rotate(-15deg);" data-speed="0">
-    <img src="../../assets/Risorsa 13c.svg" alt="" class="deco-shape" style="top: 55%; left: 2%; width: 50px; transform: rotate(25deg);" data-speed="0">
-    <img src="../../assets/Risorsa 11c.svg" alt="" class="deco-shape" style="bottom: 10%; left: 6%; width: 65px; transform: rotate(-8deg);" data-speed="0">
-    <img src="../../assets/Risorsa 12c.svg" alt="" class="deco-shape" style="top: 15%; right: 8%; width: 70px; transform: rotate(20deg);" data-speed="0">
-    <img src="../../assets/Risorsa 10c.svg" alt="" class="deco-shape" style="top: 60%; right: 18%; width: 55px; transform: rotate(-30deg);" data-speed="0">
-    <img src="../../assets/Risorsa 14c.svg" alt="" class="deco-shape" style="bottom: 15%; right: 2%; width: 80px; transform: rotate(12deg);" data-speed="0">
+    <img src="../assets/Risorsa 9c.svg" alt="" class="deco-shape" style="top: 8%; left: 3%; width: 90px; transform: rotate(-15deg);" data-speed="0">
+    <img src="../assets/Risorsa 13c.svg" alt="" class="deco-shape" style="top: 55%; left: 2%; width: 50px; transform: rotate(25deg);" data-speed="0">
+    <img src="../assets/Risorsa 11c.svg" alt="" class="deco-shape" style="bottom: 10%; left: 6%; width: 65px; transform: rotate(-8deg);" data-speed="0">
+    <img src="../assets/Risorsa 12c.svg" alt="" class="deco-shape" style="top: 15%; right: 8%; width: 70px; transform: rotate(20deg);" data-speed="0">
+    <img src="../assets/Risorsa 10c.svg" alt="" class="deco-shape" style="top: 60%; right: 18%; width: 55px; transform: rotate(-30deg);" data-speed="0">
+    <img src="../assets/Risorsa 14c.svg" alt="" class="deco-shape" style="bottom: 15%; right: 2%; width: 80px; transform: rotate(12deg);" data-speed="0">
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <a href="../../index.html" class="footer__logo" aria-label="Collage home">
-            <img src="../../assets/Logo-white.svg" alt="Collage">
+          <a href="../index.html" class="footer__logo" aria-label="Collage home">
+            <img src="../assets/Logo-white.svg" alt="Collage">
           </a>
           <p class="footer__tagline">The essentials of digital asset management for growing brands.</p>
         </div>
         <div class="footer__columns">
           <div class="footer__col">
             <h4 class="footer__col-title">Product</h4>
-            <a href="../../product/overview.html">Overview</a>
-            <a href="../../product/organize.html">Organize</a>
-            <a href="../../product/discover.html">Discover</a>
-            <a href="../../product/distribute.html">Distribute</a>
-            <a href="../../product/manage.html">Manage</a>
+            <a href="../product/overview.html">Overview</a>
+            <a href="../product/organize.html">Organize</a>
+            <a href="../product/discover.html">Discover</a>
+            <a href="../product/distribute.html">Distribute</a>
+            <a href="../product/manage.html">Manage</a>
           </div>
           <div class="footer__col">
             <h4 class="footer__col-title">Solutions</h4>
-            <a href="../../solutions/marketing.html">Marketing</a>
-            <a href="../../solutions/creative-design.html">Creative &amp; Design</a>
-            <a href="../../solutions/revenue.html">Revenue</a>
+            <a href="../solutions/marketing.html">Marketing</a>
+            <a href="../solutions/creative-design.html">Creative &amp; Design</a>
+            <a href="../solutions/revenue.html">Revenue</a>
           </div>
           <div class="footer__col">
             <h4 class="footer__col-title">Resources</h4>
-            <a href="../../blog/index.html">Blog</a>
+            <a href="../blog/index.html">Blog</a>
             <a href="https://collageinc.freshdesk.com/support/home">Help Center</a>
           </div>
           <div class="footer__col">
             <h4 class="footer__col-title">Company</h4>
-            <a href="../../about.html">About</a>
-            <a href="../../pricing.html">Pricing</a>
-            <a href="../../contact.html">Contact</a>
+            <a href="../about.html">About</a>
+            <a href="../pricing.html">Pricing</a>
+            <a href="../contact.html">Contact</a>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
         <span>&copy; 2026 Collage Labs, Inc. All rights reserved.</span>
         <div class="footer__legal">
-          <a href="../../privacy-policy.html">Privacy Policy</a>
+          <a href="../privacy-policy.html">Privacy Policy</a>
           
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="../../script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
