@@ -152,6 +152,12 @@
   </url>
 
   <url>
+    <loc>https://collage.inc/blog/how-loopy-cases-consolidated-every-asset</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://collage.inc/blog/collage-appoints-new-ceo</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
